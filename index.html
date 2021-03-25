@@ -19,23 +19,40 @@
     </style>
 </head>
 <body>
+
+   
+
     <h1 id="nombre">Erick Vergara</h1>
     <table border="1">
-    <tr>
-        <th>Nombres:</th>
-        <td>Erick José</td>
+        <tr>
+            <th>Nombres:</th>
+            <td>Erick José</td>
         
-    </tr>
-    <tr>
-        <th>Apellidos:</th>
-        <td>Vergara Ruiz</td>
+         </tr>
+        <tr>
+            <th>Apellidos:</th>
+            <td>Vergara Ruiz</td>
 
-    </tr>
-    <tr>
-        <th>Fecha de nacimiento:</th>
-        <td>17/04/1997</td>
-    </tr>
+        </tr>
+        <tr>
+            <th>Fecha de nacimiento:</th>
+            <td>17/04/1997</td>
+        </tr>
     </table>
+
+    <br>
+
+    <ol>
+        <h2>
+        <li>Biografía</li>
+        <li>Estudios</li>
+        <li>Gustos</li>
+        <li>¿Que tanto me conoces?</li>
+        </h2>
+    </ol>
+
+    <br><br>
+
     <h2 id="biografia"> Biografía</h2>
     <p>Erick José Vergara Ruiz nacido el 17 de abril de 1997 en la ciudad de Barranquilla, Colombia
     </p>
@@ -49,11 +66,16 @@
     <h3 id="deportes">Deportes</h3>
     Practica Futbol y Basquetball en su mayoría, sin embargo le llama la atención el Baseball y el Tennis.
   
+    <p></p>
+
     <form action="resultados.html">
         <div>
             <label for="">¿Qué desea buscar?</label>
             <input type="text" name="Texto_a_buscar?">
         </div>
+
+       <p></p>
+
         <div>
             <label for="">¿Donde lo desea buscar?</label>
             <select name="donde_lo_desea_buscar">
@@ -68,8 +90,118 @@
             <input type="submit" value="Buscar">
         </div>
     </form>
+    <h2>¿QUÉ TANTO ME CONOCES?</h2>
+
+    <form action="resultados.html">
+       
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" name="Nombre">
+       
+       <p></p> 
+
+        <label for="Apellido">Apellido</label>
+        <input type="text" id="Apellido" name="Apellido">
+
+        <label>
+            <h2>Pregunta 1</h2>
+
+            <div>
+                <label for="">¿Que prefiero en un viaje?</label>
+                <p></p>
+                <div>
+                    <select name="donde_lo_desea_buscar">
+                        <option value="rumba">La rumba</option>
+                        <option value="Conocer">Conocer</option>
+                        <option value="NA">No me gusta viajar</option>
+                    </select>
+                </div>
+                
+            </div>
+    
+        </label>
+
+        <label>
+            <h2>Pregunta 2</h2>
+
+            <div>
+                <label for="">¿Anime favorito?</label>
+                <p></p>
+                <div>
+                    <select name="anime_favorito">
+                        <option value="Dragon_ball_z">Dragon Ball Z</option>
+                        <option value="Naruto">Naruto</option>
+                        <option value="Super_campeones">Super Campeones</option>
+                    </select>
+                </div>
+                
+            </div>
+    
+        </label>
+
+        <label>
+            <h2>Pregunta 3</h2>
+
+            <div>
+                <label for="">¿Cual es mi pelicula favorita?</label>
+                <p></p>
+                <div>
+                    <select name="pelicula_favorita">
+                        <option value="Inception">Inception</option>
+                        <option value="Avengers_endgame">Avengers Endgame</option>
+                        <option value="unglorious_bastards">Unglorious Bastards</option>
+                    </select>
+                </div>
+                
+            </div>
+    
+        </label>
+
+        <label>
+            <h2>Pregunta 4</h2>
+
+            <div>
+                <label for="">¿Que comida nunca me aburre?</label>
+                <p></p>
+                <div>
+                    <select name="comida_que_nunca_me_aburre">
+                        <option value="Pizza">Pizza</option>
+                        <option value="Hamburguesa">Hamburguesa</option>
+                        <option value="Sushi">Sushi</option>
+                    </select>
+                </div>
+                
+            </div>
+    
+        </label>
+
+        <label>
+            <h2>Pregunta 5</h2>
+
+            <div>
+                <label for="">¿Comida dulce o salada?</label>
+                <p></p>
+                <div>
+                    <select name="dulce_o_salada">
+                        <option value="dulce">Dulce</option>
+                        <option value="salada">Salada</option>
+                    </select>
+                </div>
+                
+            </div>
+    
+        </label>
 
 
-    <h1>TE AMO DANI <3 </h1>
+        <p></p>
+
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+       
+
+     
 </body>
 </html>
