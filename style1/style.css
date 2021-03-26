@@ -2,8 +2,9 @@ body {
     background-color: white;
 }
 
-table {
+table, td, th {
     padding-left: 0px;
+    border: 1px solid black;
 }
 th{color:black;}
 td{color: black;}
@@ -19,4 +20,11 @@ h3{padding-left: 50px;}
 }
 .margen-input{
     margin: 16px 0;
+}
+.boton{
+    background-image: radial-gradient(white 60%, blue);
+    color: blue;
+    font-size: 16px;
+    font-style: italic;
+    padding: 16px;
 }
