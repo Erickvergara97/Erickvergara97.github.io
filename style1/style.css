@@ -28,3 +28,11 @@ h3{padding-left: 50px;}
     font-style: italic;
     padding: 16px;
 }
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+}
+
+.preguntas-ordenadas{display: inline-block; margin-left: 10px;}
