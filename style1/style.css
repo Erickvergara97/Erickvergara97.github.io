@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+
+table {
+    padding-left: 0px;
+}
+th{color:black;}
+td{color: black;}
+h1{color:black;}
+h2{color: black;}
+h3{padding-left: 50px;}
+.colorfavorito{padding-left: 100px;}
+.titulo{color: violet;} 
+#biografia{color: turquoise;}
+.lista-ordenada{
+    font-size: 26px;
+    font-weight: 700;
+}
+.margen-input{
+    margin: 16px 0;
+}

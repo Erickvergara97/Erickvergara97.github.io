@@ -5,18 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Vergara</title>
-    <style>
-        
-        body{background-color: white;}
-        table{padding-left: 0px;}
-        th{color:black;}
-        td{color: black;}
-        h1{color:black;}
-        h2{color: black;}
-        h3{padding-left: 50px;}
-        .colorfavorito{padding-left: 100px;}
-
-    </style>
+    
+    <link rel="stylesheet" href="style1/style.css">
 </head>
 <body>
 
@@ -40,43 +30,51 @@
         </tr>
     </table>
 
-    <br>
+    
 
-    <ol>
-        <h2>
+    <ol class="lista-ordenada">
+        
         <li>Biografía</li>
         <li>Estudios</li>
         <li>Gustos</li>
         <li>¿Que tanto me conoces?</li>
-        </h2>
+        
     </ol>
 
-    <br><br>
+    
 
-    <h2 id="biografia"> Biografía</h2>
-    <p>Erick José Vergara Ruiz nacido el 17 de abril de 1997 en la ciudad de Barranquilla, Colombia
+    <h2 class="titulo" 
+        id="biografia" 
+        style="color: brown;">
+        Biografía
+    </h2>
+    <p>
+        Erick José Vergara Ruiz nacido el 17 de abril de 1997 en la ciudad de Barranquilla, Colombia
     </p>
     <h2 id="estudios">Estudios</h2>
-    <p>Realizó sus estudios escolares en el colegio American School graduandose de bachiller academico y posteriormente estudió Ingeniería industrial en la Universidad Del Norte ambos en la ciudad de Barranquilla
+    <p>
+        Realizó sus estudios escolares en el colegio American School graduandose de bachiller academico y posteriormente estudió Ingeniería industrial en la Universidad Del Norte ambos en la ciudad de Barranquilla
     </p>
     <h2 id="gustos">Gustos</h2>
     <h3 id="colorfavorito">Color Favorito</h3>
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAACrCAMAAAD8Q8FaAAAAA1BMVEVVLoe11s4uAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIALA8UNAAFusnLHAAAAAElFTkSuQmCC" alt="">
     <p class="colorfavorito">Morado</p>
     <h3 id="deportes">Deportes</h3>
-    Practica Futbol y Basquetball en su mayoría, sin embargo le llama la atención el Baseball y el Tennis.
+    <p>
+        Practica Futbol y Basquetball en su mayoría, sin embargo le llama la atención el Baseball y el Tennis.
+    </p>
   
-    <p></p>
+   
 
     <form action="resultados.html">
-        <div>
-            <label for="">¿Qué desea buscar?</label>
-            <input type="text" name="Texto_a_buscar?">
+        <div class="margen-input">
+            <label for="search">¿Qué desea buscar?</label>
+            <input type="text" name="Texto_a_buscar?" id="search">
         </div>
 
-       <p></p>
+       
 
-        <div>
+        <div class="margen-input">
             <label for="">¿Donde lo desea buscar?</label>
             <select name="donde_lo_desea_buscar">
                 <option value="AR">Argentina</option>
@@ -86,23 +84,25 @@
             <input type="text" name="Texto a buscar?">
         </div>
 
-        <div>
+        <div class="margen-input">
             <input type="submit" value="Buscar">
         </div>
     </form>
+  
     <h2>¿QUÉ TANTO ME CONOCES?</h2>
 
     <form action="resultados.html">
+       <div class="margen-input">  
+           <label for="Nombre">Nombre</label>
+           <input type="text" id="Nombre" name="Nombre" placeholder="holamundo">
+       </div>
        
-        <label for="Nombre">Nombre</label>
-        <input type="text" id="Nombre" name="Nombre">
-       
-       <p></p> 
+       <div class="margen-input">
+           <label for="Apellido">Apellido</label>
+           <input type="text" id="Apellido" name="Apellido" value="Vergara">
+       </div>
 
-        <label for="Apellido">Apellido</label>
-        <input type="text" id="Apellido" name="Apellido">
-
-        <label>
+        <div>
             <h2>Pregunta 1</h2>
 
             <div>
@@ -110,17 +110,19 @@
                 <p></p>
                 <div>
                     <select name="donde_lo_desea_buscar">
+                        <option value="" selected disabled>Seleccione una de las siguientes opciones</option>
                         <option value="rumba">La rumba</option>
                         <option value="Conocer">Conocer</option>
                         <option value="NA">No me gusta viajar</option>
+                       
                     </select>
                 </div>
                 
             </div>
     
-        </label>
+        </div>
 
-        <label>
+        <div>
             <h2>Pregunta 2</h2>
 
             <div>
@@ -136,9 +138,9 @@
                 
             </div>
     
-        </label>
+        </div>
 
-        <label>
+        <div>
             <h2>Pregunta 3</h2>
 
             <div>
@@ -154,9 +156,9 @@
                 
             </div>
     
-        </label>
+        </div>
 
-        <label>
+        <div>
             <h2>Pregunta 4</h2>
 
             <div>
@@ -172,9 +174,9 @@
                 
             </div>
     
-        </label>
+        </div>
 
-        <label>
+        <div>
             <h2>Pregunta 5</h2>
 
             <div>
@@ -189,10 +191,10 @@
                 
             </div>
     
-        </label>
+        </div>
 
 
-        <p></p>
+        
 
         <div>
             <input type="submit">
@@ -200,7 +202,7 @@
 
     </form>
 
-       
+
 
      
 </body>
