@@ -108,13 +108,19 @@
     <form action="resultados.html">
        <div class="margen-input">  
            <label for="Nombre">Nombre</label>
-           <input type="text" id="Nombre" name="Nombre" placeholder="holamundo">
+           <input required type="text" id="Nombre" name="Nombre" placeholder="Tu nombre">
        </div>
        
        <div class="margen-input">
            <label for="Apellido">Apellido</label>
-           <input type="text" id="Apellido" name="Apellido" value="Vergara">
+           <input required type="text" id="Apellido" name="Apellido" placeholder="Tu apellido">
        </div>
+       
+       <div>
+           <caption>Genero</caption>
+           <label for="Hombre"><input type="radio" name="Genero" id="Hombre" value="Hombre">Hombre</label>
+           <label for="Mujer"><input type="radio" name="Genero" id="Mujer" value="Mujer">Mujer</label>
+       </div>    
 
         <div class="preguntas-ordenadas">
             <h2>Pregunta 1</h2>
