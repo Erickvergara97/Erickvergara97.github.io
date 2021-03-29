@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: white;
 }
 
 table, td, th {
@@ -36,3 +36,49 @@ h3{padding-left: 50px;}
 }
 
 .preguntas-ordenadas{display: inline-block; margin-left: 10px;}
+
+p{position: fixed left;}
+
+.container {
+    height: 800px;
+    width: 800px;
+    background-color: turquoise;
+}
+
+.minibox1 {
+    height: 300px;
+    width: 300px;
+    background-color: gold;
+    color: white;
+    float:left;
+    margin: 0px 0px;
+    text-align: center;
+}
+
+.minibox2 {
+    height: 300px;
+    width: 300px;
+    background-color: purple;
+    color: white;
+    float: right;
+    margin: 0px 0px;
+    text-align: center;
+}
+
+.minibox3 {
+    height: 300px;
+    width: 300px;
+    background-color: violet;
+    color: white;
+    margin: 185px 0px 332px 0px;
+    text-align: center;
+}
+
+.minibox4 {
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    color: white;
+    margin: 150px 650px;
+    text-align: center;
+}
