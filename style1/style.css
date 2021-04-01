@@ -43,6 +43,8 @@ p{position: fixed left;}
     height: 800px;
     width: 800px;
     background-color: turquoise;
+    position: relative;
+    overflow: hidden;
 }
 
 .minibox1 {
@@ -70,8 +72,9 @@ p{position: fixed left;}
     width: 300px;
     background-color: violet;
     color: white;
-    margin: 185px 0px 332px 0px;
+    margin: 485px 0 0 332px;
     text-align: center;
+    position:absolute;
 }
 
 .minibox4 {
@@ -79,6 +82,7 @@ p{position: fixed left;}
     width: 300px;
     background-color: green;
     color: white;
-    margin: 150px 650px;
-    text-align: center;
+    margin: 650px 650px;
+    text-align: left;
+    position: absolute;
 }

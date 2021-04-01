@@ -1,105 +1,69 @@
-* :disabled{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
 .marcoreloj {
+    height: 800px;
+    width: 800px;
     background-color: gray;
-    width: 600px;
-    height: 600px;
     position: relative;
-    margin: auto;
 }
 
 .circuloreloj{
     background-color: white;
-    width: 550px;
-    height: 550px;
+    width: 800px;
+    height: 800px;
     border-radius: 50%;
+    margin: auto;
     position: absolute;
-    margin: 20px;
-    z-index: 0;
+}
+
+img{
+    width: 800px;
+    height: 800px;
+    position: absolute;
 }
 
 .eje {
-
     background-color: black;
     border-radius: 50%;
     height: 50px;
     width: 50px;   
-    margin: -300px 255px; 
+    position: absolute;
+    margin: 50%;
+    z-index: 2;
     
+}
+
+.manecillas {
+    height: 200px;
+    width: 5px;
+    transform-origin:top;
+    position: absolute;
+    margin: 50%;
+    z-index: -1;
 }
 
 .aguja {
-    display: block;
-    margin: auto;
     background: red;
-    width: 5px;
-    height: 200px;
     animation: steps(60) mover 60s infinite;
-    transform-origin:bottom ;
     z-index: 0;
-    
-    
-}
-
-@keyframes mover {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
 }
 
 .minutos {
-    display: block;
-    margin: auto;
     background: black;
-    width: 5px;
-    height: 200px;
-    animation: girarminutos 3600s infinite steps(60);
-    transform-origin: bottom;
+    animation: mover 3600s infinite steps(60);
     z-index: 0;
-}
-
-@keyframes girarminutos {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
 }
 
 .horas {
-    display: block;
-    margin: auto;
     background: black;
-    width: 5px;
-    height: 200px;
-    animation: girarhoras 86400s infinite steps(12);
-    transform-origin: bottom;
+    animation: mover 86400s infinite steps(12);
     z-index: 0;
 }
 
-@keyframes girarhoras {
+
+@keyframes mover {
     0%{
-        transform: rotate(0deg);
+        transform: rotate(180deg);
     }
     100%{
-        transform: rotate(360deg);
+        transform: rotate(420deg);
     }
 }
-
-img{
-    display: flex;
-    margin: 30px;
-    height: 500px;
-    width: 500px;
-}
-
