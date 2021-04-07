@@ -7,16 +7,16 @@
 
 .circuloreloj{
     background-color: white;
-    width: 800px;
-    height: 800px;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
     margin: auto;
     position: absolute;
 }
 
 img{
-    width: 800px;
-    height: 800px;
+    width: 80%;
+    height: 80%;
     position: absolute;
 }
 
@@ -26,7 +26,13 @@ img{
     height: 50px;
     width: 50px;   
     position: absolute;
-    margin: 50%;
+    /* Solucion 1 Centrado */
+    /* 25px es la mitad del circulo */
+    margin: calc(50% - 25px);
+    /* Solucion 2 Centrado Clasica */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     z-index: 2;
     
 }
@@ -46,7 +52,7 @@ img{
     z-index: 0;
 }
 
-.minutos {
+.eje .minutos {
     background: black;
     animation: mover 3600s infinite steps(60);
     z-index: 0;
@@ -58,12 +64,17 @@ img{
     z-index: 0;
 }
 
+.centrar{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 @keyframes mover {
     0%{
         transform: rotate(180deg);
     }
     100%{
-        transform: rotate(420deg);
+        transform: rotate(540deg);
     }
 }
