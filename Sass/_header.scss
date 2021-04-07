@@ -1,0 +1,14 @@
+header {
+    background-color: gray;
+    h1 {
+        color: aquamarine;
+    }
+    nav {
+        float: right;
+
+        li{
+            display: inline-block;
+            list-style: none;
+        }
+    }
+}

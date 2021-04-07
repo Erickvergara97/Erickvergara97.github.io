@@ -1,0 +1,21 @@
+@import 'header';
+
+$color-principal: rgb(29, 116, 223);
+
+h1 {
+    color: $color-principal;
+}
+
+.contenedor{
+    h2 {
+        font-style: italic;
+    }
+    .subtitulo {
+       background-color: $color-principal;
+   }
+   ul {
+       .item {
+           color:rgb(45, 31, 31)
+       }
+   }
+}
