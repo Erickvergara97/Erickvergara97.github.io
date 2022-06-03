@@ -1,10 +1,12 @@
 import React from "react";
 import styled from 'styled-components'
 
-function BurgerMenu() {
+function BurgerMenu(props) {
     return (
         <Burger>
-            <div className="icon nav-icon-5">
+            <div onClick={props.handleClick} 
+                 className={`icon nav-icon-5 ${props.clicked ? 'open' : ''}`}
+            >
                 <span></span>
                 <span></span>
                 <span></span>
