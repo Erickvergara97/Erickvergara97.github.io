@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import styled from 'styled-components'
+import styled from 'styled-components';
+import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
 import BurgerMenu from "./BurgerMenu";
 
 
@@ -32,18 +33,18 @@ function Navbar() {
 
 export default Navbar
 
-const NavContainer = styled.nav`
+const NavContainer = styled.header`
     h2{
-        color: white;
+        color: ${colorWhite};
     }
     a{
-        color: white;
+        color: ${colorWhite};
         text-decoration: none;
         margin-right: 1rem;
     }
 
     padding: 0.4rem;
-    background-color: #333;
+    background-color: ${colorSilver};
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +59,7 @@ const NavContainer = styled.nav`
         text-align: center;
         transition: all .5s ease;
         a{
-            color: white;
+            color: ${colorWhite};
             font-size: 2rem;
             display: block;
         }
@@ -68,7 +69,7 @@ const NavContainer = styled.nav`
             margin: 0;
             a{
                 font-size: 2rem;
-                color: white;
+                color: ${colorWhite};
                 display: inline;
             }
         }
@@ -86,7 +87,7 @@ const NavContainer = styled.nav`
         a{
             font-size: 2rem;
             margin-top: 1rem;
-            color: white;
+            color: ${colorWhite};
         }
     }
 
@@ -99,7 +100,7 @@ const NavContainer = styled.nav`
 
 const Bgdiv = styled.div `
     position: absolute;
-    background-color: #222;
+    background-color: ${colorBlack};
     top: -1000px;
     left: -1000px;
     width: 100%;
