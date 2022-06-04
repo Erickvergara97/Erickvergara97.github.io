@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import styled from 'styled-components';
 import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
 import BurgerMenu from "./BurgerMenu";
+import logo from "../assets/img/ev-logo.png"
 
 
 function Navbar() {
@@ -13,7 +14,7 @@ function Navbar() {
     return (
         <>
             <NavContainer>
-                <h2>EV</h2>
+                <img src={logo} alt="logo" className="logo"/>
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     <a href="/">Inicio</a>
                     <a href="/">Perfil</a>
@@ -34,6 +35,12 @@ function Navbar() {
 export default Navbar
 
 const NavContainer = styled.header`
+    .logo{
+        width: 2rem;
+        height: auto;
+        border-radius: 10px;
+    }
+
     h2{
         color: ${colorWhite};
     }
