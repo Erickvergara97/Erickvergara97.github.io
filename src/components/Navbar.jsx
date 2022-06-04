@@ -58,6 +58,7 @@ const NavContainer = styled.header`
         margin-right: auto;
         text-align: center;
         transition: all .5s ease;
+        z-index: 2;
         a{
             color: ${colorWhite};
             font-size: 2rem;
@@ -92,7 +93,9 @@ const NavContainer = styled.header`
         }
     }
 
+
     .burger{
+        z-index: 2;
         @media(min-width: 768px){
             display: none;
         }
@@ -102,11 +105,12 @@ const NavContainer = styled.header`
 const Bgdiv = styled.div `
     position: absolute;
     background-color: ${colorBlack};
+    opacity: 0.5;
     top: -1000px;
     left: -1000px;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
 
     transition: all .6s ease;
     &.active{
@@ -115,5 +119,9 @@ const Bgdiv = styled.div `
         left: 0;
         width: 100%;
         height: 100%;
+    }
+
+    @media(min-width: 768px){
+        display: none;
     }
 `
