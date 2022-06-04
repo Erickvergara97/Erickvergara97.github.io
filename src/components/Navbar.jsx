@@ -13,7 +13,7 @@ function Navbar() {
     return (
         <>
             <NavContainer>
-                <h2>LOGO</h2>
+                <h2>EV</h2>
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     <a href="/">Inicio</a>
                     <a href="/">Perfil</a>
@@ -68,9 +68,10 @@ const NavContainer = styled.header`
             position: initial;
             margin: 0;
             a{
-                font-size: 2rem;
+                font-size: .7rem;
                 color: ${colorWhite};
                 display: inline;
+                padding-right: 3rem;
             }
         }
     }
