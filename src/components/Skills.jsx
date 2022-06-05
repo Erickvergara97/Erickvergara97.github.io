@@ -9,8 +9,52 @@ function Skills() {
             <div className="box">
                 <h2>Skills</h2>
                 <div className="carrousel">
-                    <p>React</p>
-                    <p>JavasCript</p>
+                    <div className="miniBox">
+                        <img src="" alt="React-logo" />
+                        <p>React</p>
+
+                    </div>
+                    <div className="miniBox">
+                        <img src="" alt="JavaScript-logo" />
+                        <p>JavasCript</p>
+
+                    </div>
+                    <div className="miniBox">
+                        <img src="" alt="HTML-logo" />
+                        <p>HMTL</p>
+
+                    </div>
+                    <div className="miniBox">
+                        <img src="" alt="CSS-logo" />
+                        <p>CSS</p>
+
+                    </div>
+                    <div className="miniBox">
+                        <img src="" alt="SASS-logo" />
+                        <p>SASS</p>
+
+                    </div>
+                    <div className="miniBox">
+                        <img src="" alt="Git-logo" />
+                        <p>Git</p>
+
+                    </div>
+                    <div className="miniBox">
+                        <img src="" alt="Github-logo" />
+                        <p>GitHub</p>
+
+                    </div>
+                    <div className="miniBox">
+                        <img src="" alt="Tailwind-logo" />
+                        <p>Tailwind</p>
+
+                    </div>
+                    <div className="miniBox">
+                        <img src="" alt="Bootstrap-logo" />
+                        <p>Bootstrap</p>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -37,5 +81,17 @@ const SkillsContainer = styled.section`
         box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
 
         margin-top: 5rem;
+        
+        .carrousel{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+
+            .miniBox{
+                margin: 1rem;
+            }
+    
+        }
     }
+
 `
