@@ -31,12 +31,11 @@ const SkillsContainer = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: absolute;
         background-color: ${colorBone};
-        top: 1300px;
         width: 90%;
         height: 50%;
-
         box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+
+        margin-top: 5rem;
     }
 `
