@@ -41,8 +41,8 @@ export default Projects
 
 
 const ProjectsContainer = styled.section`
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;

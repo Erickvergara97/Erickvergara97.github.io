@@ -31,6 +31,8 @@ function Contact() {
 export default Contact
 
 const ContactContainer = styled.section`
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background-color: ${colorWhite};
     display: flex;
     flex-direction: column;

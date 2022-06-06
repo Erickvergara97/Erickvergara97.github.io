@@ -32,7 +32,7 @@ export default Profile
 const AboutMe = styled.section `
     background-color: ${colorPurple};
     color: ${colorWhite};
-    padding-top: 2rem;
+    padding-top: 6rem;
     padding-bottom: 14rem;
 
         display: flex;
