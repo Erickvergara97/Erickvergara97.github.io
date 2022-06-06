@@ -10,15 +10,21 @@ function Contact() {
             <h2>Contact </h2>
             <div className="box">
                 <div className="miniBox">
-                    <SiGmail className="icon gmail"/>
+                    <a href="mailto:erick.vergara.ruiz@gmail.com" target="_blank" rel="noreferrer">
+                        <SiGmail className="icon gmail"/>
+                    </a>
                     <p>Gmail</p>
                 </div>
                 <div className="miniBox">
-                    <SiLinkedin className="icon linkedin"/>
+                    <a href="https://www.linkedin.com/in/erick-vergara-a782691a5/" target="_blank" rel="noreferrer">
+                        <SiLinkedin className="icon linkedin"/>
+                    </a>
                     <p>Linkedn</p>
                 </div>
                 <div className="miniBox">
+                <a href="https://github.com/Erickvergara97" target="_blank" rel="noreferrer">
                     <SiGithub className="icon github"/>
+                </a>
                     <p>Github</p>
                 </div>
             </div>
@@ -48,6 +54,10 @@ const ContactContainer = styled.section`
             display: flex;
             flex-direction: column;
             align-items: center;
+            p{
+                color: ${colorPurple};
+                font-weight: bold;
+            }
 
             .icon{
                 width: 3rem;

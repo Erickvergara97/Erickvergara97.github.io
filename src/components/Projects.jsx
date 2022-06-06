@@ -53,8 +53,13 @@ const ProjectsContainer = styled.section`
 
         .miniBox{
             margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             p{
                 text-align-last: center;
+                color: ${colorPurple};
+                font-weight: bold;
             }
             img{
                 width: 20rem;
