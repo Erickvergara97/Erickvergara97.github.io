@@ -1,4 +1,5 @@
-//import './style/App/App.css';
+import styled, { createGlobalStyle } from "styled-components"
+import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from './assets/styles/abstracts/variables'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Profile from './components/Profile';
@@ -9,7 +10,8 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <GlobalStyle/>
       <Navbar />
       <main>
         <Home />
@@ -19,8 +21,42 @@ function App() {
         <Contact />
       </main>
       <Footer/>
-    </div>
+    </>
   );
 }
 
 export default App;
+
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box
+  }
+
+  section{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  h2{
+    margin-bottom: 4rem;
+  }
+
+  button{
+    background-color: ${colorPurple};
+    color: ${colorBone};
+    width: 8rem;
+    align-self: center;
+    margin: 1rem;
+
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+`

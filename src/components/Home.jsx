@@ -24,8 +24,6 @@ const Me = styled.section `
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
 
     img{
         padding: 2rem;

@@ -32,7 +32,6 @@ export default Profile
 const AboutMe = styled.section `
     background-color: ${colorPurple};
     color: ${colorWhite};
-    padding-top: 6rem;
     padding-bottom: 14rem;
 
         display: flex;
@@ -60,19 +59,6 @@ const AboutMe = styled.section `
                 font-size: 20px;
             }
         }
-    }
-
-
-    button{
-        background-color: ${colorPurple};
-        color: ${colorBone};
-        width: 8rem;
-        align-self: center;
-        margin: 1rem;
-
-        border: 3px solid;
-        border-radius: 5px;
-        padding: 5px;
     }
 
     @media(min-width: 768px){

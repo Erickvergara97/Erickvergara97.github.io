@@ -6,7 +6,7 @@ import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../as
 function Footer() {
     return (
         <FooterContainer>
-            Footer 
+            <p>© 2022 Erick Vergara</p> 
         </FooterContainer>
     )
 }
