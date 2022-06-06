@@ -102,25 +102,27 @@ const SkillsContainer = styled.section`
                 }
 
                 .react{color: #61DBFB;}
-
                 .javascript{color: #F0DB4F; background-color: #323330;}
-
                 .html{color: #E34C26;}
-
                 .css{color: #3C99DC;}
-
                 .sass{color: #CD6799;}
-
                 .git{color: #f34f29;}
-
                 .github{color: #211F1F;}
-
                 .tailwind{color: #38bdf8;}
-
                 .bootstrap{color: #080135;}
-
             }
     
+        }
+    }
+
+    @media(min-width: 768px){
+        .box{
+            width: 60%;
+            .carrousel{
+                .miniBox{
+                    margin: 2.5rem;
+                }
+            }
         }
     }
 
