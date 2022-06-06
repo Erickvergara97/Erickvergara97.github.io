@@ -15,8 +15,9 @@ function Footer() {
 export default Footer
 
 const FooterContainer = styled.footer`
-    background-color: ${colorSilver};
-    color: ${colorBone};
+    padding: 2rem;
+    background-color: ${colorBone};
+    color: ${colorSilver};
     display: flex;
     justify-content: center;
 `

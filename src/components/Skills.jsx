@@ -1,7 +1,8 @@
 import React from "react";
 import styled from 'styled-components'
 import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
-
+import { DiBootstrap, DiReact, DiSass } from "react-icons/di";
+import {SiJavascript, SiHtml5, SiCss3, SiGit, SiGithub, SiTailwindcss} from "react-icons/si"
 
 function Skills() {
     return (
@@ -10,47 +11,47 @@ function Skills() {
                 <h2>Skills</h2>
                 <div className="carrousel">
                     <div className="miniBox">
-                        <img src="" alt="React-logo" />
+                        <DiReact className="icon react"/>
                         <p>React</p>
 
                     </div>
                     <div className="miniBox">
-                        <img src="" alt="JavaScript-logo" />
+                        <SiJavascript className="icon javascript"/>
                         <p>JavasCript</p>
 
                     </div>
                     <div className="miniBox">
-                        <img src="" alt="HTML-logo" />
+                        <SiHtml5 className="icon html "/>
                         <p>HMTL</p>
 
                     </div>
                     <div className="miniBox">
-                        <img src="" alt="CSS-logo" />
+                        <SiCss3 className="icon css"/>
                         <p>CSS</p>
 
                     </div>
                     <div className="miniBox">
-                        <img src="" alt="SASS-logo" />
+                        <DiSass className="icon sass"/>
                         <p>SASS</p>
 
                     </div>
                     <div className="miniBox">
-                        <img src="" alt="Git-logo" />
+                        <SiGit className="icon git"/>
                         <p>Git</p>
 
                     </div>
                     <div className="miniBox">
-                        <img src="" alt="Github-logo" />
+                        <SiGithub className="icon github"/>
                         <p>GitHub</p>
 
                     </div>
                     <div className="miniBox">
-                        <img src="" alt="Tailwind-logo" />
+                        <SiTailwindcss className="icon tailwind"/>
                         <p>Tailwind</p>
 
                     </div>
                     <div className="miniBox">
-                        <img src="" alt="Bootstrap-logo" />
+                        <DiBootstrap className="icon bootstrap"/>
                         <p>Bootstrap</p>
 
                     </div>
@@ -89,6 +90,35 @@ const SkillsContainer = styled.section`
 
             .miniBox{
                 margin: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .icon{
+                    width: 5rem;
+                    height: auto;
+
+                    //funcion para los colores
+                }
+
+                .react{color: #61DBFB;}
+
+                .javascript{color: #F0DB4F; background-color: #323330;}
+
+                .html{color: #E34C26;}
+
+                .css{color: #3C99DC;}
+
+                .sass{color: #CD6799;}
+
+                .git{color: #f34f29;}
+
+                .github{color: #211F1F;}
+
+                .tailwind{color: #38bdf8;}
+
+                .bootstrap{color: #080135;}
+
             }
     
         }

@@ -14,16 +14,19 @@ function Projects() {
                 <div className="miniBox">
                     <img src={vivelacumbre} alt="vivelacumbre" />
                     <p>Vive la cumbre</p>
+                    <p>https://vivelacumbre.org/</p>
 
                 </div>
                 <div className="miniBox">
                     <img src={animewiki} alt="animewiki" />
                     <p>Animewiki</p>
+                    <p>https://erickvergara97.github.io/proyecto-anime/</p>
 
                 </div>
                 <div className="miniBox">
                     <img src={techEvent} alt="techevent" />
                     <p>TechEvent</p>
+                    <p>https://erickvergara97.github.io/tech-event/</p>
 
                 </div>
             </div>
@@ -38,7 +41,8 @@ export default Projects
 
 
 const ProjectsContainer = styled.section`
-    margin-top: 8rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
