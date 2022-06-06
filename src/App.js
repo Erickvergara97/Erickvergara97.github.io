@@ -46,6 +46,10 @@ const GlobalStyle = createGlobalStyle`
   h2{
     margin-bottom: 4rem;
   }
+  
+  p{
+    margin: 1rem;
+  }
 
   .primaryButton{
     background-color: ${colorPurple};

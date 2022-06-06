@@ -45,8 +45,11 @@ const ContactContainer = styled.section`
     .box{
         display: flex;
         flex-flow: row wrap;
-        width: 60%;
         justify-content: space-between;
+
+        @media(min-width: 768px){
+            width: 60%;
+        }
         .miniBox{
             margin: 1rem;
             display: flex;

@@ -14,21 +14,21 @@ function Projects() {
                 <div className="miniBox">
                     <img src={vivelacumbre} alt="vivelacumbre" />
                     <a href="https://vivelacumbre.org/" target="_blank" rel="noreferrer" className="primaryButton">
-                        <p>Vive la cumbre</p>
+                        Vive la cumbre
                     </a>
 
                 </div>
                 <div className="miniBox">
                     <img src={animewiki} alt="animewiki" />
                     <a href="https://erickvergara97.github.io/tech-event/" target="_blank" rel="noreferrer" className="primaryButton">
-                        <p>Animewiki</p>
+                        Animewiki
                     </a>
 
                 </div>
                 <div className="miniBox">
                     <img src={techEvent} alt="techevent" />
                     <a href="https://erickvergara97.github.io/tech-event/" target="_blank" rel="noreferrer" className="primaryButton">
-                        <p>TechEvent</p>
+                        TechEvent
                     </a>
 
                 </div>
@@ -57,7 +57,7 @@ const ProjectsContainer = styled.section`
             display: flex;
             flex-direction: column;
             align-items: center;
-            p{
+            a{
                 text-align: center;
             }
             img{
