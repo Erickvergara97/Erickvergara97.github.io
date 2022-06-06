@@ -6,7 +6,7 @@ import {SiLinkedin, SiGmail, SiGithub } from "react-icons/si"
 
 function Contact() {
     return (
-        <ContactContainer>
+        <ContactContainer id="contact">
             <h2>Contact </h2>
             <div className="box">
                 <div className="miniBox">

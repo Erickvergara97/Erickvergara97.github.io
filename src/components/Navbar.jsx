@@ -17,10 +17,10 @@ function Navbar() {
                 <img src={logo} alt="logo" className="logo"/>
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     <a href="/">Home</a>
-                    <a href="/">About me</a>
-                    <a href="/">Skills</a>
-                    <a href="/">Projects</a>
-                    <a href="/">Contact</a>
+                    <a href="#about">About me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div className="burger">
                     <BurgerMenu clicked={clicked} handleClick={handleClick}/>

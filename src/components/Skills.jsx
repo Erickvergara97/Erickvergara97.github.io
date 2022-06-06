@@ -6,7 +6,7 @@ import {SiJavascript, SiHtml5, SiCss3, SiGit, SiGithub, SiTailwindcss} from "rea
 
 function Skills() {
     return (
-        <SkillsContainer>
+        <SkillsContainer id="skills">
             <div className="box">
                 <h2>Skills</h2>
                 <div className="carrousel">

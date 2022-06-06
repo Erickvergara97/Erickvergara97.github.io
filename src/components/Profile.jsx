@@ -5,7 +5,7 @@ import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../as
 
 function Profile() {
     return (
-        <AboutMe>
+        <AboutMe id="about">
             <div className="aboutContainer">
                 <h2>My name is Erick Vergara</h2>
                 <p>I'm a Frontend developer with knowledge in many languages such as React or JavaScript.
@@ -20,7 +20,7 @@ function Profile() {
                     vel sollicitudin neque. Aliquam ultricies accumsan orci non pretium.
                     Integer mi enim, malesuada hendrerit lacus ut, tempus auctor ligula.
                 </p>
-                <button> Download CV</button>
+                <button className="primaryButton"> Download CV</button>
             </div>
         </AboutMe>
     )

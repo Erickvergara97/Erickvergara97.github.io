@@ -8,25 +8,28 @@ import techEvent from "../assets/img/techevent.png"
 
 function Projects() {
     return (
-        <ProjectsContainer>
+        <ProjectsContainer id="projects">
             <h2>Projects</h2>
             <div className="box">
                 <div className="miniBox">
                     <img src={vivelacumbre} alt="vivelacumbre" />
-                    <p>Vive la cumbre</p>
-                    <p>https://vivelacumbre.org/</p>
+                    <a href="https://vivelacumbre.org/" target="_blank" rel="noreferrer" className="primaryButton">
+                        <p>Vive la cumbre</p>
+                    </a>
 
                 </div>
                 <div className="miniBox">
                     <img src={animewiki} alt="animewiki" />
-                    <p>Animewiki</p>
-                    <p>https://erickvergara97.github.io/proyecto-anime/</p>
+                    <a href="https://erickvergara97.github.io/tech-event/" target="_blank" rel="noreferrer" className="primaryButton">
+                        <p>Animewiki</p>
+                    </a>
 
                 </div>
                 <div className="miniBox">
                     <img src={techEvent} alt="techevent" />
-                    <p>TechEvent</p>
-                    <p>https://erickvergara97.github.io/tech-event/</p>
+                    <a href="https://erickvergara97.github.io/tech-event/" target="_blank" rel="noreferrer" className="primaryButton">
+                        <p>TechEvent</p>
+                    </a>
 
                 </div>
             </div>
@@ -55,9 +58,7 @@ const ProjectsContainer = styled.section`
             flex-direction: column;
             align-items: center;
             p{
-                text-align-last: center;
-                color: ${colorPurple};
-                font-weight: bold;
+                text-align: center;
             }
             img{
                 width: 20rem;

@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 4rem;
   }
 
-  button{
+  .primaryButton{
     background-color: ${colorPurple};
     color: ${colorBone};
     width: 8rem;
