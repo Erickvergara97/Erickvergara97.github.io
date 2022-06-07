@@ -13,21 +13,21 @@ function Projects() {
             <div className="box">
                 <div className="miniBox">
                     <img src={vivelacumbre} alt="vivelacumbre" />
-                    <a href="https://vivelacumbre.org/" target="_blank" rel="noreferrer" className="primaryButton">
+                    <a href="https://vivelacumbre.org/" target="_blank" rel="noreferrer" className="button secondaryBtn">
                         Vive la cumbre
                     </a>
 
                 </div>
                 <div className="miniBox">
                     <img src={animewiki} alt="animewiki" />
-                    <a href="https://erickvergara97.github.io/tech-event/" target="_blank" rel="noreferrer" className="primaryButton">
+                    <a href="https://erickvergara97.github.io/proyecto-anime/" target="_blank" rel="noreferrer" className="button secondaryBtn">
                         Animewiki
                     </a>
 
                 </div>
                 <div className="miniBox">
                     <img src={techEvent} alt="techevent" />
-                    <a href="https://erickvergara97.github.io/tech-event/" target="_blank" rel="noreferrer" className="primaryButton">
+                    <a href="https://erickvergara97.github.io/tech-event/" target="_blank" rel="noreferrer" className="button secondaryBtn">
                         TechEvent
                     </a>
 

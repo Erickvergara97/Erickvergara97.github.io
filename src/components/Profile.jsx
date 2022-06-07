@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
-
+import {Link} from 'react-router-dom'
 
 function Profile() {
     return (
@@ -20,7 +20,16 @@ function Profile() {
                     vel sollicitudin neque. Aliquam ultricies accumsan orci non pretium.
                     Integer mi enim, malesuada hendrerit lacus ut, tempus auctor ligula.
                 </p>
-                <button className="primaryButton"> Download CV</button>
+
+                <span>"Solo se que nada se"</span>
+                <span>
+                    - Erick Vergara
+                </span>
+                <button className="button primaryBtn">
+                    <Link to="/Pdf" target="_blank">
+                        Download CV
+                    </Link>
+                </button>
             </div>
         </AboutMe>
     )
@@ -33,10 +42,9 @@ const AboutMe = styled.section `
     background-color: ${colorPurple};
     color: ${colorWhite};
     padding-bottom: 14rem;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .aboutContainer{
         line-height: 1.5;
@@ -50,14 +58,6 @@ const AboutMe = styled.section `
                 font-size: 32px;
             }
 
-        }
-
-        p{
-            text-align: center;
-
-            @media(min-width: 768px){
-                font-size: 20px;
-            }
         }
     }
 
