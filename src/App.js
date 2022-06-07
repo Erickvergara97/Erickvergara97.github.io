@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components"
 import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from './assets/styles/abstracts/variables'
-import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Profile from './components/Profile';
@@ -8,8 +7,6 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
-import Pdf from "./components/routes/Pdf";
 
 function App() {
   return (
@@ -55,40 +52,36 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .button{
-    background: transparent;
     width: 9rem;
     line-height: 3rem;
     align-self: center;
     margin: 1rem;
-    
     border: 3px solid;
     border-radius: 10px;
     font-weight: bold;
-    transition: background-color 2s, color 2s;
-    
-    a{
-      transition: color 2s;
-      color: ${colorBone};
-    }
-    
-    
+    transition: background-color 1s, color 1s;    
   }
   .primaryBtn{
-    color: ${colorWhite};
-    border-color: ${colorBone};
+    color: ${colorPurple};
+    background-color: ${colorWhite};
+    border-color: ${colorWhite};
+
     &&:hover{
-      background-color: ${colorBone};
-      color: ${colorPurple};
+      background-color: transparent;
+      color: ${colorWhite};
       a{
-        color: ${colorPurple};
+        color: ${colorWhite};
       }
     }
   }
 
   .secondaryBtn{
-    &&:hover{
       background-color: ${colorPurple};
-      color: ${colorBone};
+      color: ${colorWhite};
+      border-color: ${colorPurple};
+    &&:hover{
+      background-color: ${colorWhite};
+      color: ${colorPurple};
     }
   }
   

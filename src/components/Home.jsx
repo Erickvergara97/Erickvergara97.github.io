@@ -6,7 +6,7 @@ import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../as
 
 function Home() {
     return (
-        <Me>
+        <Me id="home">
             <div className="introContainer">
                 <h2>Erick Vergara</h2>
                 <p>Frontend developer <span>|</span> Nice to meet you <span>!</span></p>

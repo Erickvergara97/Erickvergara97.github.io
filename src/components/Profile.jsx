@@ -25,11 +25,11 @@ function Profile() {
                 <span>
                     - Erick Vergara
                 </span>
-                <button className="button primaryBtn">
-                    <Link to="/Pdf" target="_blank">
+                <Link to="/Pdf" target="_blank">
+                    <button className="button primaryBtn">
                         Download CV
-                    </Link>
-                </button>
+                    </button>
+                </Link>
             </div>
         </AboutMe>
     )

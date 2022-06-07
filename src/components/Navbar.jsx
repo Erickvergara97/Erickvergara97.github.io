@@ -16,7 +16,7 @@ function Navbar() {
             <NavContainer>
                 <img src={logo} alt="logo" className="logo"/>
                 <div className={`links ${clicked ? 'active' : ''}`}>
-                    <a href="/">Home</a>
+                    <a href="#home">Home</a>
                     <a href="#about">About me</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
@@ -35,6 +35,8 @@ function Navbar() {
 export default Navbar
 
 const NavContainer = styled.header`
+    position: fixed;
+    width: 100%;
     .logo{
         width: 2rem;
         height: auto;
@@ -89,9 +91,10 @@ const NavContainer = styled.header`
         position: absolute;
         margin-right: auto;
         margin-left: auto;
-        top: 30%;
+        top: 8vh;
         left: 0;
         right: 0;
+        line-height: 12vh;
 
         a{
             font-size: 2rem;
@@ -110,9 +113,9 @@ const NavContainer = styled.header`
 `
 
 const Bgdiv = styled.div `
-    position: absolute;
+    position: fixed;
     background-color: ${colorBlack};
-    opacity: 0.5;
+    opacity: 0.7;
     top: -1000px;
     left: -1000px;
     width: 100%;
@@ -121,7 +124,7 @@ const Bgdiv = styled.div `
 
     transition: all .6s ease;
     &.active{
-        border-radius: 0 0 80% 0;
+        border-radius: 0 0 60% 0;
         top: 0;
         left: 0;
         width: 100%;
