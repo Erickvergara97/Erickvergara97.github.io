@@ -18,7 +18,7 @@ function Navbar() {
     
       document.onclick = function (clickEvent) {
           if(clickEvent.target.tagName === 'A'){
-            console.log(setClicked(false))
+            setClicked(false)
         }
       }
 
