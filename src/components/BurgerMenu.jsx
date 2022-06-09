@@ -7,7 +7,7 @@ function BurgerMenu(props) {
     return (
         <Burger>
             <div onClick={props.handleClick} 
-                 className={`icon nav-icon-5 ${props.clicked ? 'open' : ''}`}
+                 className={`icon navIcon ${props.clicked ? 'open' : ''}`}
             >
                 <span></span>
                 <span></span>
@@ -22,7 +22,7 @@ export default BurgerMenu
 
 
 const Burger = styled.div`
-        .nav-icon-5{
+        .navIcon{
     width: 35px;
     height: 30px;
     margin: 10px 10px;
@@ -30,7 +30,7 @@ const Burger = styled.div`
     cursor: pointer;
     display: inline-block;
     }
-    .nav-icon-5 span{
+    .navIcon span{
     background-color: ${colorWhite};
     position: absolute;
     border-radius: 2px;
@@ -39,36 +39,36 @@ const Burger = styled.div`
     height: 4px;
     transition-duration: 500ms
     }
-    .nav-icon-5 span:nth-child(1){
+    .navIcon span:nth-child(1){
     top:0px;
     left: 0px;
     }
-    .nav-icon-5 span:nth-child(2){
+    .navIcon span:nth-child(2){
     top:13px;
     left: 0px;
     opacity:1;
     }
-    .nav-icon-5 span:nth-child(3){
+    .navIcon span:nth-child(3){
     bottom:0px;
     left: 0px;
     }
-    .nav-icon-5:not(.open):hover span:nth-child(1){
+    .navIcon:not(.open):hover span:nth-child(1){
     transform: rotate(-3deg) scaleY(1.1);
     }
-    .nav-icon-5:not(.open):hover span:nth-child(2){
+    .navIcon:not(.open):hover span:nth-child(2){
     transform: rotate(3deg) scaleY(1.1);
     }
-    .nav-icon-5:not(.open):hover span:nth-child(3){
+    .navIcon:not(.open):hover span:nth-child(3){
     transform: rotate(-4deg) scaleY(1.1);
     }
-    .nav-icon-5.open span:nth-child(1){
+    .navIcon.open span:nth-child(1){
     transform: rotate(45deg);
     top: 13px;
     }
-    .nav-icon-5.open span:nth-child(2){
+    .navIcon.open span:nth-child(2){
     opacity:0;
     }
-    .nav-icon-5.open span:nth-child(3){
+    .navIcon.open span:nth-child(3){
     transform: rotate(-45deg);
     top: 13px;
     }

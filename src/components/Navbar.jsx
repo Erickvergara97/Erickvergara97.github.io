@@ -1,9 +1,8 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import styled from 'styled-components';
 import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
 import BurgerMenu from "./BurgerMenu";
 import logo from "../assets/img/ev-logo.png"
-
 
 function Navbar() {
 
@@ -11,6 +10,21 @@ function Navbar() {
     function handleClick () {
         setClicked(!clicked)
     }
+    const handleResize = () => {
+        if (window.innerWidth >= 768) {
+            setClicked(false)
+        }
+      }
+    
+      document.onclick = function (clickEvent) {
+          if(clickEvent.target.tagName === 'A'){
+            console.log(setClicked(false))
+        }
+      }
+
+      useEffect(() => {
+        window.addEventListener("resize", handleResize)
+      })
     return (
         <>
             <NavContainer>

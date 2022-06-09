@@ -110,6 +110,14 @@ const SkillsContainer = styled.section`
                 .github{color: #211F1F;}
                 .tailwind{color: #38bdf8;}
                 .bootstrap{color: #080135;}
+
+                .react, .javascript, .html, .css, .sass, .git, .github, .tailwind, .bootstrap {
+                    transition: color 2s, background-color 2s;
+                    &:hover{
+                        color: ${colorPurple};
+                        background-color: transparent;
+                    }
+                }
             }
     
         }

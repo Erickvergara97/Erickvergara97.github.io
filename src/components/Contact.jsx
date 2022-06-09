@@ -61,13 +61,21 @@ const ContactContainer = styled.section`
             }
 
             .icon{
-                width: 3rem;
+                width: 4rem;
                 height: auto;
             }
 
             .gmail{ color: red}
             .linkedin{ color: #006192}
             .github{ color: #211F1F}
+
+            .gmail, .linkedin, .github {
+                transition: color 2s, background-color 2s;
+                &:hover{
+                    color: ${colorPurple};
+                    background-color: transparent;
+                }
+            }
         }
     }
 `
