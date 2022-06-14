@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
+import {colorWhite, colorBlack} from '../assets/styles/abstracts/variables'
 import {DiReact} from "react-icons/di";
 import {SiJavascript, SiGithub, SiCss3} from "react-icons/si";
 import vivelacumbre from "../assets/img/vivelacumbre.png"
@@ -108,7 +108,7 @@ const ProjectsContainer = styled.section`
 
             width: 400px;
             height: 300px;
-            background: #000;
+            background: ${colorBlack};
             border-radius: 30px;
             overflow: hidden;
             display: flex;
@@ -139,7 +139,7 @@ const ProjectsContainer = styled.section`
                 z-index: 30;
                 position: absolute;
                 bottom: 0px;
-                color: #fff;
+                color: ${colorWhite};
                 padding: 20px;
                 padding-bottom: 4rem;
                 border-radius: 30px;
@@ -155,8 +155,8 @@ const ProjectsContainer = styled.section`
                         padding: 7px 17px;
                         border-radius: 12px;
                         background: transparent;
-                        border: 2px solid #fff;
-                        color: #fff;
+                        border: 2px solid ${colorWhite};
+                        color: ${colorWhite};
                         margin-top: 10px;
                         margin-left: auto;
                         cursor: pointer;
@@ -164,8 +164,8 @@ const ProjectsContainer = styled.section`
                         font-size: .75rem;
                         outline: none;
                         &:hover{
-                            background: #fff;
-                            color: #000;
+                            background: ${colorWhite};
+                            color: ${colorWhite};
                         }
                     }
                 }
@@ -209,7 +209,7 @@ const ProjectsContainer = styled.section`
                 transition: all .25s ease;
 
                 li{
-                    background: #fff;
+                    background: ${colorWhite};
                     list-style: none;
                     width: 40px;
                     height: 40px;
@@ -229,10 +229,6 @@ const ProjectsContainer = styled.section`
                         opacity: 1;
                         transform: translate(-7px, -4px);
                         border-radius: 6px;
-                    }
-                    i{
-                        font-size: 1.4rem;
-                        color: #000
                     }
                 }
             }

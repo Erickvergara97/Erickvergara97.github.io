@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 import myPicture from '../assets/img/profile-picture.jpeg'
-import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
+import {colorPurple, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
 
 
 function Home() {

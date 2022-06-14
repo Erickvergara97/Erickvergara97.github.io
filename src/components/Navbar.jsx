@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import styled from 'styled-components';
-import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
+import {colorWhite, colorSilver, colorBlack} from '../assets/styles/abstracts/variables'
 import BurgerMenu from "./BurgerMenu";
 import logo from "../assets/img/ev-logo.png"
 

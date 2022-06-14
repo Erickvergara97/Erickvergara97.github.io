@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from './assets/styles/abstracts/variables'
+import {colorPurple, colorWhite} from './assets/styles/abstracts/variables'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Profile from './components/Profile';

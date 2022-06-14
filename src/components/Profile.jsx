@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import {colorPurple, colorWhite, colorSilver, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
+import {colorPurple, colorWhite} from '../assets/styles/abstracts/variables'
 import {Link} from 'react-router-dom'
 
 function Profile() {
