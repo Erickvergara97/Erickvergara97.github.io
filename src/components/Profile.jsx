@@ -8,14 +8,10 @@ function Profile() {
         <AboutMe id="about">
             <div className="aboutContainer">
                 <h2>My name is Erick Vergara</h2>
-                <p>I'm a Frontend developer with knowledge in many languages such as React or JavaScript.
-                    I have many soft skills such as ........
-                </p>
-                <p>
-                    Industrial engineer graduated at Universidad del Norte. Analytical, committed and fast learner. High knowledge in web development and technical skills. Experienced and result oriented, great team worker and focus on results.
+                <p>I am a Frontend developer with knowledge in many languages such as React and JavaScript. I have experience working with Javascript, React, CSS, SASS, and many others Frontend tools. One of the main things that characterizes me is my fast learning and being a good teammate, my journey started one year ago since I moved to another city and met a friend who is a Senior Frontend developer, so he started teaching me and then I kept studying by my own, I really love to code so I think that this helped me to learn this in a short time period, I love making webpages that helps other people to have a good experience in there. I am always seeking to keep improving my skills looking for new tools. It hasn't been an easy journey but what makes me continue trusting the process and myself is the next quote:
                 </p>
 
-                <span>"Faith it till you make it"</span>
+                <span>"Fake it till you make it"</span>
 
                 <Link to="/Pdf" target="_blank">
                     <button className="button primaryBtn">
@@ -39,7 +35,7 @@ const AboutMe = styled.section `
     align-items: center;
 
     .aboutContainer{
-        line-height: 1.5;
+        line-height: 2.5;
         margin: 2rem;
         display: flex;
         flex-direction: column;
@@ -49,7 +45,6 @@ const AboutMe = styled.section `
             @media(min-width: 768px){
                 font-size: 32px;
             }
-
         }
     }
 

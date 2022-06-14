@@ -31,7 +31,7 @@ function Projects() {
                         <p>
                             This was my first webpage with an "oficial" domain, it was made for a foundation named Vivelacumbre and I worked collaboratively with another web developer and some members of the foundation in order to discuss the design and interactions of the page. 
                             <a href="https://vivelacumbre.org/" target="_blank" rel="noreferrer">
-                                see webpage
+                                See webpage
                             </a>
                         </p>
                     </div>
@@ -54,7 +54,7 @@ function Projects() {
                         <p>
                             Animewiki is a webpage made with react in where the main goal was to use an API and some others react tools like Route or Hooks.
                             <a href="https://erickvergara97.github.io/proyecto-anime/" target="_blank" rel="noreferrer">
-                                see webpage
+                                See webpage
                             </a>
                         </p>
                     </div>
@@ -77,7 +77,7 @@ function Projects() {
                         <p>
                             TechEvent is one of my first projects in where I used HTML and CSS focusing in the design and some HTML routes called with Id's, I made it responsive and also did one of my first BurgerMenu.
                             <a href="https://erickvergara97.github.io/tech-event/" target="_blank" rel="noreferrer">
-                                see webpage
+                                See webpage
                             </a>
                         </p>
                     </div>
@@ -127,6 +127,7 @@ const ProjectsContainer = styled.section`
                 background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
                 z-index: 20;
                 transition: all .25s ease;
+                border-radius: 30px;
             }
 
             img{
@@ -141,6 +142,7 @@ const ProjectsContainer = styled.section`
                 color: #fff;
                 padding: 20px;
                 padding-bottom: 4rem;
+                border-radius: 30px;
                 p{
                     font-size: .8rem;
                     opacity: 0;
