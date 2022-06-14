@@ -49,6 +49,7 @@ function Navbar() {
 export default Navbar
 
 const NavContainer = styled.header`
+    z-index: 1;
     position: fixed;
     width: 100%;
     .logo{
