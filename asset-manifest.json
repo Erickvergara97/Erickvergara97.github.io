@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/index.html/static/css/main.e6c13ad2.css",
-    "main.js": "/index.html/static/js/main.368aff3d.js",
-    "static/js/787.34fff886.chunk.js": "/index.html/static/js/787.34fff886.chunk.js",
-    "static/media/vivelacumbre.png": "/index.html/static/media/vivelacumbre.353298ad1f3575b138ed.png",
-    "static/media/animewiki.png": "/index.html/static/media/animewiki.ab00a9ff1b6a6156139b.png",
-    "static/media/resume-ev.pdf": "/index.html/static/media/resume-ev.44bb2d69f1d66aa14935.pdf",
-    "static/media/techevent.png": "/index.html/static/media/techevent.03ae2d2a887c55b0c5e1.png",
-    "static/media/profile-picture.jpeg": "/index.html/static/media/profile-picture.3bd839166e7fe305e4e8.jpeg",
-    "static/media/ev-logo.png": "/index.html/static/media/ev-logo.6c1354bfc8e640e0fea0.png",
-    "index.html": "/index.html/index.html",
-    "main.e6c13ad2.css.map": "/index.html/static/css/main.e6c13ad2.css.map",
-    "main.368aff3d.js.map": "/index.html/static/js/main.368aff3d.js.map",
-    "787.34fff886.chunk.js.map": "/index.html/static/js/787.34fff886.chunk.js.map"
+    "main.css": "/portafolio-ev/static/css/main.e6c13ad2.css",
+    "main.js": "/portafolio-ev/static/js/main.cf52954c.js",
+    "static/js/787.34fff886.chunk.js": "/portafolio-ev/static/js/787.34fff886.chunk.js",
+    "static/media/vivelacumbre.png": "/portafolio-ev/static/media/vivelacumbre.353298ad1f3575b138ed.png",
+    "static/media/animewiki.png": "/portafolio-ev/static/media/animewiki.ab00a9ff1b6a6156139b.png",
+    "static/media/resume-ev.pdf": "/portafolio-ev/static/media/resume-ev.44bb2d69f1d66aa14935.pdf",
+    "static/media/techevent.png": "/portafolio-ev/static/media/techevent.03ae2d2a887c55b0c5e1.png",
+    "static/media/profile-picture.jpeg": "/portafolio-ev/static/media/profile-picture.3bd839166e7fe305e4e8.jpeg",
+    "static/media/ev-logo.png": "/portafolio-ev/static/media/ev-logo.6c1354bfc8e640e0fea0.png",
+    "index.html": "/portafolio-ev/index.html",
+    "main.e6c13ad2.css.map": "/portafolio-ev/static/css/main.e6c13ad2.css.map",
+    "main.cf52954c.js.map": "/portafolio-ev/static/js/main.cf52954c.js.map",
+    "787.34fff886.chunk.js.map": "/portafolio-ev/static/js/787.34fff886.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.368aff3d.js"
+    "static/js/main.cf52954c.js"
   ]
 }
