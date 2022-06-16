@@ -105,9 +105,13 @@ const ProjectsContainer = styled.section`
         .miniBox{
             position: relative;
             margin: 1rem;
-
-            width: 400px;
+            width: 340px;
             height: 300px;
+
+            @media(min-width: 768px){
+                width: 400px;
+                height: 300px;
+            }
             background: ${colorBlack};
             border-radius: 30px;
             overflow: hidden;
