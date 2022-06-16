@@ -13,7 +13,7 @@ function Profile() {
 
                 <span>"Fake it till you make it"</span>
 
-                <Link to="/Pdf" target="_blank">
+                <Link to="Pdf" target="_blank">
                     <button className="button primaryBtn">
                         Download CV
                     </button>

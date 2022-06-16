@@ -12,6 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
+        <Route path="/" element={<App />} />
         <Route index element={<App />} />
         <Route path="Pdf" element={<Pdf />} />
       </Routes>
