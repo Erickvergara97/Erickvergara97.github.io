@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="Pdf" element={<Pdf />} />
+        <Route exact path="Pdf" element={<Pdf />} />
       </Routes>
 
         <GlobalStyle/>
