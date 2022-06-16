@@ -129,7 +129,6 @@ const ProjectsContainer = styled.section`
                 position: absolute;
                 height: 150px;
                 background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-                z-index: 20;
                 transition: all .25s ease;
                 border-radius: 30px;
             }
@@ -140,7 +139,7 @@ const ProjectsContainer = styled.section`
             }
 
             .con-text{
-                z-index: 30;
+                z-index: 1;
                 position: absolute;
                 bottom: 0px;
                 color: ${colorWhite};
@@ -237,8 +236,5 @@ const ProjectsContainer = styled.section`
                 }
             }
         }
-    }
-    @media(min-width: 768px){
-        margin-top: 18rem;
     }
 `
