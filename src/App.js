@@ -17,7 +17,6 @@ function App() {
       <Routes>
         <Route exact path="Pdf" element={<Pdf />} />
       </Routes>
-
         <GlobalStyle/>
         <Navbar />
         <main>
