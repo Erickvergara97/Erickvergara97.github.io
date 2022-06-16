@@ -8,20 +8,27 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Pdf from "./components/routes/Pdf";
+
 function App() {
   return (
-    <>
-      <GlobalStyle/>
-      <Navbar />
-      <main>
-        <Home />
-        <Profile />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer/>
-    </>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path="Pdf" element={<Pdf />} />
+      </Routes>
+
+        <GlobalStyle/>
+        <Navbar />
+        <main>
+          <Home />
+          <Profile />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer/>
+    </BrowserRouter>
   );
 }
 
