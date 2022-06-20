@@ -201,7 +201,7 @@ const ProjectsContainer = styled.section`
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                z-index: 1;
+                z-index: 10;
                 border-radius: 14px;
                 padding-left: 0px;
                 padding-top: 8px;
