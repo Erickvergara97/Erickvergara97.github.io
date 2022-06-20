@@ -12,7 +12,7 @@ function Profile() {
 
                 <span>"Fake it till you make it"</span>
 
-                <a href="./Pdf" target="_blank">
+                <a href="https://docs.google.com/presentation/d/1Ic23Vg8gmHru4E4j8yrahbeolfO8LFDK/edit#slide=id.p1" target="_blank" rel="noreferrer">
                     <button className="button primaryBtn">
                         Download CV
                     </button>
