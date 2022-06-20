@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from "styled-components"
-import resume from "../../assets/docs/resume-ev.pdf"
 
 function Pdf() {
   return (
     <PdfContainer>
-        <object data={resume} type="application/pdf"> 
+        <object data={require("../../assets/docs/resume-ev.pdf")} type="application/pdf"> 
         </object>
     </PdfContainer>
   )

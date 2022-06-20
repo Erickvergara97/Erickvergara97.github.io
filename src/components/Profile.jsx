@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
 import {colorPurple, colorWhite} from '../assets/styles/abstracts/variables'
-import {Link} from 'react-router-dom'
 
 function Profile() {
     return (
@@ -13,11 +12,11 @@ function Profile() {
 
                 <span>"Fake it till you make it"</span>
 
-                <Link to="./pdf" target="_blank">
+                <a href="./Pdf" target="_blank">
                     <button className="button primaryBtn">
                         Download CV
                     </button>
-                </Link>
+                </a>
             </div>
         </AboutMe>
     )
