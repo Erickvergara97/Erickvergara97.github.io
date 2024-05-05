@@ -4,9 +4,12 @@ import {colorSilver, colorBone} from '../assets/styles/abstracts/variables'
 
 
 function Footer() {
+    const d = new Date();
+    const year = d.getFullYear();
+
     return (
         <FooterContainer>
-            <p>© 2022 Erick Vergara</p> 
+            <p>© {year} Erick Vergara</p> 
         </FooterContainer>
     )
 }

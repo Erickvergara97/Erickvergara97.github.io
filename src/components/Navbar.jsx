@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import {colorWhite, colorSilver, colorBlack} from '../assets/styles/abstracts/variables'
 import BurgerMenu from "./BurgerMenu";
 import logo from "../assets/img/ev-logo.png"
+import LanguageDropdown from "./navbar/languageDropdown";
+import NavbarButton from "./navbar/navbarButton";
 
 function Navbar() {
 
@@ -29,13 +31,14 @@ function Navbar() {
         <>
             <NavContainer>
                 <img src={logo} alt="logo" className="logo"/>
-                <div className={`links ${clicked ? 'active' : ''}`}>
-                    <a href="#home">Home</a>
-                    <a href="#about">About me</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
+                <nav className={`links ${clicked ? 'active' : ''}`}>
+                    <NavbarButton link="#home">Home</NavbarButton>
+                    <NavbarButton link="#about">About me</NavbarButton>
+                    <NavbarButton link="#skills">Skills</NavbarButton>
+                    <NavbarButton link="#projects">Projects</NavbarButton>
+                    <NavbarButton link="#contact">Contact</NavbarButton>
+                </nav>
+                <LanguageDropdown/>
                 <div className="burger">
                     <BurgerMenu clicked={clicked} handleClick={handleClick}/>
                 </div>
