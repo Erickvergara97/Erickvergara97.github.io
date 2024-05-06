@@ -61,15 +61,6 @@ const NavContainer = styled.header`
         border-radius: 10px;
     }
 
-    h2{
-        color: ${colorWhite};
-    }
-    a{
-        color: ${colorWhite};
-        text-decoration: none;
-        margin-right: 1rem;
-    }
-
     padding: 0.4rem;
     background-color: ${colorSilver};
     display: flex;
@@ -86,20 +77,12 @@ const NavContainer = styled.header`
         text-align: center;
         transition: all .5s ease;
         z-index: 2;
-        a{
-            color: ${colorWhite};
-            font-size: 2rem;
-            display: block;
-        }
 
         @media(min-width: 768px){
             position: initial;
-            margin: 0;
             a{
                 font-size: .7rem;
-                color: ${colorWhite};
                 display: inline;
-                padding-right: 3rem;
             }
         }
     }
