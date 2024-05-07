@@ -22,8 +22,7 @@ const NavButton = styled.a`
     font-size: .7rem;
     display: inline;
     transition: color 0.5s;
-    &::after,
-    &::before {
+    &::after {
       transition: all .5s;
     }
 
@@ -34,13 +33,13 @@ const NavButton = styled.a`
     /* stroke */
     position: relative;
     ::after {
+      content: '';
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       margin: auto;
       width: 0%;
-      content: '';
       background: #aaa;
       height: 1px;
     }

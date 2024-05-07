@@ -5,6 +5,7 @@ import BurgerMenu from "./BurgerMenu";
 import logo from "../assets/img/ev-logo.png"
 import LanguageDropdown from "./navbar/languageDropdown";
 import NavbarButton from "./navbar/navbarButton";
+import SwitchButton from "./navbar/switchButton";
 
 function Navbar() {
 
@@ -28,23 +29,24 @@ function Navbar() {
         window.addEventListener("resize", handleResize)
       })
     return (
-        <>
-            <NavContainer>
-                <img src={logo} alt="logo" className="logo"/>
-                <nav className={`links ${clicked ? 'active' : ''}`}>
-                    <NavbarButton link="#home">Home</NavbarButton>
-                    <NavbarButton link="#about">About me</NavbarButton>
-                    <NavbarButton link="#skills">Skills</NavbarButton>
-                    <NavbarButton link="#projects">Projects</NavbarButton>
-                    <NavbarButton link="#contact">Contact</NavbarButton>
-                </nav>
+        <NavContainer>
+            <img src={logo} alt="logo" className="logo"/>
+            <nav className={`links ${clicked ? 'active' : ''}`}>
+                <NavbarButton link="#home">Home</NavbarButton>
+                <NavbarButton link="#about">About me</NavbarButton>
+                <NavbarButton link="#skills">Skills</NavbarButton>
+                <NavbarButton link="#projects">Projects</NavbarButton>
+                <NavbarButton link="#contact">Contact</NavbarButton>
+            </nav>
+            <div style={{display: 'flex', gap: 15, alignItems: 'center'}}>
                 <LanguageDropdown/>
-                <div className="burger">
-                    <BurgerMenu clicked={clicked} handleClick={handleClick}/>
-                </div>
-                <Bgdiv className = {`initial ${clicked ?  'active' : ''}`}></Bgdiv>
-            </NavContainer>
-        </>
+                <SwitchButton/>
+            </div>
+            <div className="burger">
+                <BurgerMenu clicked={clicked} handleClick={handleClick}/>
+            </div>
+            <BurgerBg className = {`initial ${clicked ?  'active' : ''}`}></BurgerBg>
+        </NavContainer>
     )
 }
 
@@ -55,18 +57,17 @@ const NavContainer = styled.header`
     z-index: 10;
     position: fixed;
     width: 100%;
+    padding: 0.4rem;
+    background-color: ${colorSilver};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     .logo{
         width: 2rem;
         height: auto;
         border-radius: 10px;
     }
 
-    padding: 0.4rem;
-    background-color: ${colorSilver};
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
     .links{
         position: absolute;
         top: -700px;
@@ -113,7 +114,7 @@ const NavContainer = styled.header`
     }
 `
 
-const Bgdiv = styled.div `
+const BurgerBg = styled.div `
     position: fixed;
     background-color: ${colorBlack};
     opacity: 0.7;
