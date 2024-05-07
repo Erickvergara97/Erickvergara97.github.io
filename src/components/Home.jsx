@@ -1,16 +1,27 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 import styled from 'styled-components'
-import myPicture from '../assets/img/profile-picture.jpeg'
-
 
 function Home() {
     return (
         <Me id="home">
             <div className="introContainer">
-                <h2>Erick Vergara</h2>
-                <p>Frontend developer <span>|</span> Nice to meet you <span>!</span></p>
+                <h2>Hey, I'm Erick</h2>
+                <TypeAnimation
+                sequence={[
+                    // Same substring at the start will only be typed once, initially
+                    'Web devlepoer',
+                    1000,
+                    '...',
+                    1000,
+                    'Web developer.',
+                    1000,
+                ]}
+                speed={50}
+                style={{ fontSize: '5rem' }}
+                wrapper="p"
+                />
             </div>
-            <img src={myPicture} alt="Profile-pic" />
         </Me>
     )
 }
@@ -32,11 +43,13 @@ const Me = styled.section `
     }
 
     h2{
+        font-size: 6rem;
         margin: 1rem;
         color: ${({ theme }) => theme.accent };
         padding: .4rem;
     }
     p{
+        font-size: 6rem;
         margin: 1rem;
         color: ${({ theme }) => theme.primary};
         span{
