@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import {colorPurple, colorWhite, colorBone} from '../assets/styles/abstracts/variables'
+import { colorBone } from '../assets/styles/abstracts/variables'
 import { DiBootstrap, DiReact, DiSass } from "react-icons/di";
 import {SiJavascript, SiHtml5, SiCss3, SiGit, SiGithub, SiTailwindcss} from "react-icons/si"
 
@@ -68,7 +68,6 @@ export default Skills
 
 
 const SkillsContainer = styled.section`
-    background-color: ${colorWhite};
     display: flex;
     justify-content: center;
     .box{
@@ -114,7 +113,7 @@ const SkillsContainer = styled.section`
                 .react, .javascript, .html, .css, .sass, .git, .github, .tailwind, .bootstrap {
                     transition: color 2s, background-color 2s;
                     &:hover{
-                        color: ${colorPurple};
+                        color: ${({ theme }) => theme.accent };
                         background-color: transparent;
                     }
                 }

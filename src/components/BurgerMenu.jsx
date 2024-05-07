@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import {colorWhite} from '../assets/styles/abstracts/variables'
+import {colorSilver} from '../assets/styles/abstracts/variables'
 
 
 function BurgerMenu(props) {
@@ -31,7 +31,7 @@ const Burger = styled.div`
     display: inline-block;
     }
     .navIcon span{
-    background-color: ${colorWhite};
+    background-color: ${colorSilver};
     position: absolute;
     border-radius: 2px;
     transition: .3s cubic-bezier(.8, .5, .2, 1.4);

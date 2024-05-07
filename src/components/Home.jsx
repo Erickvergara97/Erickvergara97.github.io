@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
 import myPicture from '../assets/img/profile-picture.jpeg'
-import {colorPurple, colorBone, colorBlack} from '../assets/styles/abstracts/variables'
 
 
 function Home() {
@@ -20,7 +19,6 @@ function Home() {
 export default Home
 
 const Me = styled.section `
-    background-color: ${colorBone};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,14 +33,14 @@ const Me = styled.section `
 
     h2{
         margin: 1rem;
-        color: ${colorPurple};
+        color: ${({ theme }) => theme.accent };
         padding: .4rem;
     }
     p{
         margin: 1rem;
-        color: ${colorBlack};
+        color: ${({ theme }) => theme.primary};
         span{
-            color: ${colorPurple};
+            color: ${({ theme }) => theme.accent };
         }
     }
 

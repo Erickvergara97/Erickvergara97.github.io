@@ -2,13 +2,15 @@ import React, { useState } from 'react'
 import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5'
 import styled from 'styled-components'
 
-export default function SwitchButton() {
+export default function SwitchButton({ isDarkMode, setIsDarkMode }) {
     const [isToggled, setIsToggled] = useState(false);
-
+    //FIX: darkmode state usage
     const toggleSwitch = () => {
       setIsToggled(!isToggled);
+      setIsDarkMode(!isToggled)
     };
-  return (
+
+    return (
     <Switch onClick={toggleSwitch} isToggled={isToggled}>
         <span className={`innerCircle ${isToggled ? 'active' : ''}`}>
             <span className='icon'>
@@ -51,8 +53,8 @@ const Switch = styled.button`
     .icon{
         position: absolute;
         color: white;
-        top: 1px;
-        left: 1px;
+        top: 0.5px;
+        left: 0.5px;
         &.sun{
             color: #3c3f44;
             ${({ isToggled }) => (isToggled ? 'opacity: 0;' : 'opacity: 1;')}

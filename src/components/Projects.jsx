@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import {colorWhite, colorBlack} from '../assets/styles/abstracts/variables'
+import {colorWhite} from '../assets/styles/abstracts/variables'
 import {DiReact} from "react-icons/di";
 import {SiJavascript, SiGithub, SiCss3} from "react-icons/si";
 import vivelacumbre from "../assets/img/vivelacumbre.png"
@@ -112,7 +112,6 @@ const ProjectsContainer = styled.section`
                 width: 400px;
                 height: 300px;
             }
-            background: ${colorBlack};
             border-radius: 30px;
             overflow: hidden;
             display: flex;
