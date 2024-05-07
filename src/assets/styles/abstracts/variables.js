@@ -9,10 +9,12 @@ export let lightTheme = {
     background: 'radial-gradient(125% 125% at 50% 10%,#fff 40%,#63e 100%)',
     textPrimary: '#000',
     textSecondary: 'red',
-    accent: 'red',
+    accent: '#8263CE',
     error: 'red',
     success: 'red',
-    surface: 'red'
+    surface: 'red',
+    divider: '#e2e2e3',
+    navbar: '#ffff'
 };
 export let darkTheme = {
     primary: '#fff',
@@ -20,8 +22,10 @@ export let darkTheme = {
     background: 'radial-gradient(125% 125% at 50% 10%,#000 40%,#63e 100%)',
     textPrimary: '#fff',
     textSecondary: 'purple',
-    accent: 'red',
+    accent: '#8263CE',
     error: 'red',
     success: 'red',
-    surface: 'red'
+    surface: 'red',
+    divider: '#0000',
+    navbar: '#1b1b1f'
 }

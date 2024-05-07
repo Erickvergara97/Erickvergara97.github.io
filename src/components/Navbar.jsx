@@ -67,8 +67,8 @@ const NavContainer = styled.header`
     position: fixed;
     width: 100%;
     padding: 0.4rem;
-    ${({scrollPosition}) => (`background-color: ${scrollPosition === 0 ? 'transparent' : '#fff'}`)};
-    ${({scrollPosition}) => (`border-bottom: ${scrollPosition === 0 ? '1px solid transparent' : `1px solid ${colorSilver}`}`)};
+    ${({theme, scrollPosition}) => (`background-color: ${scrollPosition === 0 ? 'transparent' : theme.navbar}`)};
+    ${({theme, scrollPosition}) => (`border-bottom: ${scrollPosition === 0 ? '1px solid transparent' : `1px solid ${theme.divider}`}`)};
     display: flex;
     align-items: center;
     justify-content: space-between;

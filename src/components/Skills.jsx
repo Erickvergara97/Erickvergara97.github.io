@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import {colorPurple, colorWhite, colorBone} from '../assets/styles/abstracts/variables'
+import {colorPurple, colorBone} from '../assets/styles/abstracts/variables'
 import { DiBootstrap, DiReact, DiSass } from "react-icons/di";
 import {SiJavascript, SiHtml5, SiCss3, SiGit, SiGithub, SiTailwindcss} from "react-icons/si"
 

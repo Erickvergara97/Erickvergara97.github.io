@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components'
-import {colorPurple, colorWhite} from '../assets/styles/abstracts/variables'
 
 function Profile() {
     return (
@@ -26,7 +25,7 @@ function Profile() {
 export default Profile
 
 const AboutMe = styled.section `
-    color: ${colorWhite};
+    color: ${({ theme }) => theme.primary };
     padding-bottom: 14rem;
     display: flex;
     flex-direction: column;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import {colorPurple, colorWhite} from '../assets/styles/abstracts/variables'
+import {colorPurple} from '../assets/styles/abstracts/variables'
 import {SiLinkedin, SiGmail, SiGithub } from "react-icons/si"
 
 
