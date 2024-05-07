@@ -7,9 +7,10 @@ import LanguageDropdown from "./navbar/languageDropdown";
 import NavbarButton from "./navbar/navbarButton";
 import SwitchButton from "./navbar/switchButton";
 
-function Navbar() {
-
+function Navbar({ isDarkMode, setIsDarkMode }) {
     const [clicked, setClicked] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(window.scrollY)
+
     function handleClick () {
         setClicked(!clicked)
     }
@@ -17,19 +18,27 @@ function Navbar() {
         if (window.innerWidth >= 768) {
             setClicked(false)
         }
-      }
+    }
+
+    const handleScroll = () => {
+        setScrollPosition(window.scrollY);
+      };
     
       document.onclick = function (clickEvent) {
           if(clickEvent.target.tagName === 'A'){
             setClicked(false)
         }
       }
-
       useEffect(() => {
         window.addEventListener("resize", handleResize)
-      })
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    })
+
     return (
-        <NavContainer>
+        <NavContainer scrollPosition={scrollPosition}>
             <img src={logo} alt="logo" className="logo"/>
             <nav className={`links ${clicked ? 'active' : ''}`}>
                 <NavbarButton link="#home">Home</NavbarButton>
@@ -40,7 +49,7 @@ function Navbar() {
             </nav>
             <div style={{display: 'flex', gap: 15, alignItems: 'center'}}>
                 <LanguageDropdown/>
-                <SwitchButton/>
+                <SwitchButton isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
             </div>
             <div className="burger">
                 <BurgerMenu clicked={clicked} handleClick={handleClick}/>
@@ -58,10 +67,12 @@ const NavContainer = styled.header`
     position: fixed;
     width: 100%;
     padding: 0.4rem;
-    background-color: ${colorSilver};
+    ${({scrollPosition}) => (`background-color: ${scrollPosition === 0 ? 'transparent' : '#fff'}`)};
+    ${({scrollPosition}) => (`border-bottom: ${scrollPosition === 0 ? '1px solid transparent' : `1px solid ${colorSilver}`}`)};
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.7s ease;
     .logo{
         width: 2rem;
         height: auto;

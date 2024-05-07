@@ -19,7 +19,6 @@ export default Footer
 
 const FooterContainer = styled.footer`
     padding: 2rem;
-    background-color: ${colorBone};
     color: ${colorSilver};
     display: flex;
     justify-content: center;

@@ -26,7 +26,6 @@ function Profile() {
 export default Profile
 
 const AboutMe = styled.section `
-    background-color: ${colorPurple};
     color: ${colorWhite};
     padding-bottom: 14rem;
     display: flex;

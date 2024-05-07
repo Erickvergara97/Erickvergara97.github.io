@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { colorWhite } from '../../assets/styles/abstracts/variables'
 
 export default function NavbarButton({link,children}) {
   return (
@@ -9,7 +8,7 @@ export default function NavbarButton({link,children}) {
 }
 
 const NavButton = styled.a`
-  color: ${colorWhite};
+  color: ${({ theme }) => theme.primary};
   text-decoration: none;
   margin-right: 1rem;
   font-size: 2rem;

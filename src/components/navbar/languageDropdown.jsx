@@ -16,7 +16,7 @@ export default function LanguageDropdown() {
 
 const DropdownButton = styled.button`
     background-color: unset;
-    color: ${colorWhite};
+    color: ${({ theme }) => theme.primary};
     display: flex;
     justify-content: center;
 `

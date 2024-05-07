@@ -20,7 +20,6 @@ function Home() {
 export default Home
 
 const Me = styled.section `
-    background-color: ${colorBone};
     display: flex;
     flex-direction: column;
     align-items: center;

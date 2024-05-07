@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components"
-import {colorPurple, colorWhite} from './assets/styles/abstracts/variables'
+import { ThemeProvider, createGlobalStyle } from "styled-components"
+import {colorPurple, colorWhite, darkTheme, lightTheme} from './assets/styles/abstracts/variables'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Profile from './components/Profile';
@@ -10,24 +10,36 @@ import Footer from './components/Footer';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Pdf from "./components/routes/Pdf";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  useEffect(() => {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setIsDarkMode(true)
+    } else {
+      setIsDarkMode(false)
+    }
+  },[])
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
-        <Route exact path="pdf" element={<Pdf />} />
-      </Routes>
-        <GlobalStyle/>
-        <Navbar />
-        <main>
-          <Home />
-          <Profile />
-          <Skills />
-          <Projects />
-          <Contact />
-        </main>
-        <Footer/>
-    </BrowserRouter>
+    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route exact path="pdf" element={<Pdf />} />
+        </Routes>
+          <GlobalStyle/>
+          <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+          <main>
+            <Home />
+            <Profile />
+            <Skills />
+            <Projects />
+            <Contact />
+          </main>
+          <Footer/>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
@@ -41,9 +53,13 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     border: none;
     outline: none;
-    box-sizing: border-box
+    box-sizing: border-box;
   }
-
+  body{
+  background: ${({ theme }) => theme.background };
+  background-attachment: fixed;
+  background-size: cover;
+}
   section{
     padding-top: 6rem;
     padding-bottom: 6rem;

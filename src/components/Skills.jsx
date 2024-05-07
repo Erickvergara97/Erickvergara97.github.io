@@ -68,7 +68,6 @@ export default Skills
 
 
 const SkillsContainer = styled.section`
-    background-color: ${colorWhite};
     display: flex;
     justify-content: center;
     .box{
