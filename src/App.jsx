@@ -1,5 +1,5 @@
 import { ThemeProvider, createGlobalStyle } from "styled-components"
-import {colorPurple, colorWhite, darkTheme, lightTheme} from './assets/styles/abstracts/variables'
+import {colorWhite, darkTheme, lightTheme} from './assets/styles/abstracts/variables'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Profile from './components/Profile';
@@ -84,7 +84,7 @@ const GlobalStyle = createGlobalStyle`
     transition: background-color 1s, color 1s;    
   }
   .primaryBtn{
-    color: ${colorPurple};
+    color: ${({ theme }) => theme.accent };
     background-color: ${colorWhite};
     border-color: ${colorWhite};
 
@@ -98,12 +98,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .secondaryBtn{
-      background-color: ${colorPurple};
+      background-color: ${({ theme }) => theme.accent };
       color: ${colorWhite};
-      border-color: ${colorPurple};
+      border-color: ${({ theme }) => theme.accent };
     &&:hover{
       background-color: ${colorWhite};
-      color: ${colorPurple};
+      color: ${({ theme }) => theme.accent };
     }
   }
   

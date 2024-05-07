@@ -1,7 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
 import myPicture from '../assets/img/profile-picture.jpeg'
-import {colorPurple} from '../assets/styles/abstracts/variables'
 
 
 function Home() {
@@ -34,14 +33,14 @@ const Me = styled.section `
 
     h2{
         margin: 1rem;
-        color: ${colorPurple};
+        color: ${({ theme }) => theme.accent };
         padding: .4rem;
     }
     p{
         margin: 1rem;
         color: ${({ theme }) => theme.primary};
         span{
-            color: ${colorPurple};
+            color: ${({ theme }) => theme.accent };
         }
     }
 

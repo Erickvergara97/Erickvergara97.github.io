@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components'
-import {colorPurple} from '../assets/styles/abstracts/variables'
 import {SiLinkedin, SiGmail, SiGithub } from "react-icons/si"
 
 
@@ -55,7 +54,7 @@ const ContactContainer = styled.section`
             flex-direction: column;
             align-items: center;
             p{
-                color: ${colorPurple};
+                color: ${({ theme }) => theme.accent };
                 font-weight: bold;
             }
 
@@ -71,7 +70,7 @@ const ContactContainer = styled.section`
             .gmail, .linkedin, .github {
                 transition: color 2s, background-color 2s;
                 &:hover{
-                    color: ${colorPurple};
+                    color: ${({ theme }) => theme.accent };
                     background-color: transparent;
                 }
             }
