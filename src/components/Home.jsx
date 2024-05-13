@@ -47,6 +47,7 @@ const Me = styled.section `
         margin: 1rem;
         color: ${({ theme }) => theme.accent };
         padding: .4rem;
+        font-family: "Archivo Black", sans-serif;
     }
     p{
         font-size: 6rem;

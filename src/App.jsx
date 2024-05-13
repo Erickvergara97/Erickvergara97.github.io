@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Pdf from "./components/routes/Pdf";
 import { useEffect, useState } from "react";
+import Experience from "./components/Experience";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -32,6 +33,7 @@ function App() {
           <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
           <main>
             <Home />
+            <Experience isDarkMode={isDarkMode} />
             <Profile />
             <Skills />
             <Projects />
@@ -59,6 +61,11 @@ const GlobalStyle = createGlobalStyle`
   background: ${({ theme }) => theme.background };
   background-attachment: fixed;
   background-size: cover;
+  //Escoger tipografia
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Rubik", sans-serif;
+
 }
   section{
     padding-top: 6rem;
