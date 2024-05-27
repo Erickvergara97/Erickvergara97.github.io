@@ -12,7 +12,7 @@ function Projects() {
     return (
         <ProjectsContainer id="projects">
             
-            <h2>Projects</h2>
+            <h3>Projects</h3>
             <div className="box">
                 <div className="miniBox">
                     <ul className="ul">
@@ -27,7 +27,7 @@ function Projects() {
                     </ul>
                     <img src={vivelacumbre} alt="vivelacumbre" />
                     <div className="con-text">
-                        <h3>Vive la cumbre</h3>
+                        <h4>Vive la cumbre</h4>
                         <p>
                             This was my first webpage with an "oficial" domain, it was made for a foundation named Vivelacumbre and I worked collaboratively with another web developer and some members of the foundation in order to discuss the design and interactions of the page. 
                             <a href="https://vivelacumbre.org/" target="_blank" rel="noreferrer">
@@ -50,7 +50,7 @@ function Projects() {
                     </ul>
                     <img src={animewiki} alt="animewiki" />
                     <div className="con-text">
-                        <h3>Animewiki</h3>
+                        <h4>Animewiki</h4>
                         <p>
                             Animewiki is a webpage made with react in where the main goal was to use an API and some others react tools like Route or Hooks.
                             <a href="https://erickvergara97.github.io/proyecto-anime/" target="_blank" rel="noreferrer">
@@ -73,7 +73,7 @@ function Projects() {
                     </ul>
                     <img src={techEvent} alt="vivelacumbre" />
                     <div className="con-text">
-                        <h3>TechEvent</h3>
+                        <h4>TechEvent</h4>
                         <p>
                             TechEvent is one of my first projects in where I used HTML and CSS focusing in the design and some HTML routes called with Id's, I made it responsive and also did one of my first BurgerMenu.
                             <a href="https://erickvergara97.github.io/tech-event/" target="_blank" rel="noreferrer">
@@ -97,6 +97,9 @@ const ProjectsContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    h3 {
+        color: ${({theme}) => theme.accent};
+    }
     .box{
         display: flex;
         flex-flow: row wrap;

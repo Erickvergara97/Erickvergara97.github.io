@@ -40,6 +40,10 @@ const ContactContainer = styled.section`
     flex-direction: column;
     align-items: center;
 
+    h2{
+        color: ${({theme}) => theme.accent};
+    }
+
     .box{
         display: flex;
         flex-flow: row wrap;
