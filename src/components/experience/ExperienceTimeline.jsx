@@ -76,18 +76,18 @@ const TimelineSection = styled.div`
     }
 
     .timeline-content{
-        background-color: #2f363e;
+        background-color: ${({ theme }) => theme.cards };
         padding: 30px;
         border-radius: 8px;
         h3{
             font-size: 20px;
-            color: #ffffff;
+            color: ${({ theme }) => theme.accent };
             margin: 0 0 10px;
             text-transform: capitalize;
             font-weight: 500;
         }
         p{
-            color: #c8c8c8;
+            color: ${({ theme }) => theme.textPrimary };
             font-size: 16px;
             font-weight: 300;
             line-height: 22px;
@@ -103,6 +103,7 @@ const TimelineSection = styled.div`
         border-radius: 50%;
         top: 10px;
         box-shadow: inset 0 0 5px 3px ${({ theme }) => theme.navbar },0 0 8px 17px ${({ theme }) => theme.navbar };
+        /* box-shadow: 0 0 5px 3px ${({ theme }) => theme.accent },0 0 8px 17px ${({ theme }) => theme.navbar }; */
     }
 
     .timeline-date{

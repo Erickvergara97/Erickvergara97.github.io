@@ -28,7 +28,7 @@ export default function Experience({isDarkMode}) {
 }
 
 const ExperienceCard = styled.article`
-    background-color: ${props => props.isDarkMode ? '':'white'};
+    background-color: ${({ theme }) => theme.cards };
     padding: 20px;
     border-radius: 10px;
     height: 150px;
