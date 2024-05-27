@@ -13,8 +13,8 @@ export let lightTheme = {
     success: 'red',
     surface: 'red',
     divider: '#e2e2e3',
-    navbar: '#ffff',
-    cards: '#FAF9F6'
+    navbar: '#F6F6F7',
+    cards: '#F6F6F7'
 };
 export let darkTheme = {
     primary: '#fff',
@@ -28,6 +28,6 @@ export let darkTheme = {
     surface: 'red',
     divider: '#0000',
     navbar: '#1b1b1f',
-    cards: '#252525'
+    cards: '#1b1b1f'
 
 }
