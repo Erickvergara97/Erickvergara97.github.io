@@ -34,9 +34,9 @@ function App() {
           <main>
             <Home />
             <Experience isDarkMode={isDarkMode} />
-            <Profile />
-            <Skills />
             <Projects />
+            <Skills />
+            <Profile />
             <Contact />
           </main>
           <Footer/>
