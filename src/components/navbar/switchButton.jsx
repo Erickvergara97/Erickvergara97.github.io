@@ -1,14 +1,20 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react';
 import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5'
 import styled from 'styled-components'
 
 export default function SwitchButton({ isDarkMode, setIsDarkMode }) {
+
     const [isToggled, setIsToggled] = useState(false);
-    //FIX: darkmode state usage
+
     const toggleSwitch = () => {
       setIsToggled(!isToggled);
       setIsDarkMode(!isToggled)
     };
+
+    useEffect(() => {
+        setIsToggled(isDarkMode)
+    },[isDarkMode])
 
     return (
     <Switch onClick={toggleSwitch} isToggled={isToggled}>
