@@ -14,12 +14,12 @@ export default function Experience({isDarkMode}) {
         <img src={isDarkMode ? MonomerosDark : Monomeros}  alt="" />
         </div>
         </ExperienceCard> */}
-        <div style={{display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
+        <div style={{display: 'flex', padding: '10px', flexFlow: 'row wrap', alignItems: 'center', justifyContent: 'center', gap: '10px'}}>
           <ExperienceCard isDarkMode={isDarkMode}>
-              <Globant width='24rem' fill={isDarkMode ? '#ffff' : ''}/>
+              <Globant fill={isDarkMode ? '#ffff' : ''}/>
           </ExperienceCard>
           <ExperienceCard isDarkMode={isDarkMode}>
-              <Evalueserve width='24rem' fill={isDarkMode ? '#ffff' : '#4C4C4D'}/>
+              <Evalueserve fill={isDarkMode ? '#ffff' : '#4C4C4D'}/>
           </ExperienceCard>
         </div>
         <ExperienceTimeline/>
@@ -28,6 +28,7 @@ export default function Experience({isDarkMode}) {
 }
 
 const ExperienceCard = styled.article`
+    width: 24rem;
     background-color: ${({ theme }) => theme.cards };
     padding: 20px;
     border-radius: 10px;
