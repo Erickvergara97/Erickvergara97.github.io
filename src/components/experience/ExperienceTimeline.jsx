@@ -6,17 +6,17 @@ export default function ExperienceTimeline() {
     <TimelineSection className='timeline-section'>
         <div className='timeline-items'>
             {
-                experienceInfo.map(experience => {
+                experienceInfo.map((experience, index) => {
                     return (
-                        <div className='timeline-item'>
+                        <div key={index} className='timeline-item'>
                             <div className='timeline-dot'></div>
                             <div className='timeline-date'>{experience.date}</div>
                             <div className='timeline-content'>
                                 <h3>{experience.company}</h3>
                                 <ul style={{listStyle: 'inside'}}>
                                     {
-                                        experience.content.map(item => {
-                                            return <li style={{marginBottom: '15px'}}>{item}</li>
+                                        experience.content.map((item, index) => {
+                                            return <li key={index} style={{marginBottom: '15px'}}>{item}</li>
                                         })
                                     }
                                 </ul>

@@ -14,7 +14,8 @@ export let lightTheme = {
     surface: 'red',
     divider: '#e2e2e3',
     navbar: '#F6F6F7',
-    cards: '#F6F6F7'
+    cards: '#F6F6F7',
+    icons: 'auto'
 };
 export let darkTheme = {
     primary: '#fff',
@@ -28,6 +29,7 @@ export let darkTheme = {
     surface: 'red',
     divider: '#0000',
     navbar: '#1b1b1f',
-    cards: '#1b1b1f'
+    cards: '#1b1b1f',
+    icons: '#C2C6DA'
 
 }
