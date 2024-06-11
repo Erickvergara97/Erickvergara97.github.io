@@ -3,25 +3,33 @@
       "company": "Monomeros",
       "date": "2020",
       "content": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Improve company's share point by coding it and proposing new ideas",
+        "Assist in planning and management strategy execution",
+        "Participate in budget creation and audits",
+        "Support safety-promoting events in the company",
+        "Coordinate and manage live event streaming during the pandemic, reaching over 500 viewers"
       ]
     },
     {
       "company": "Globant",
       "date": "2021",
       "content": [
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "Contributed as part of a key team dedicated to maintaining and enhancing a renowned banking platform.",
+        "Specialized in the loans section, where I debugged and implemented improvements using React.",
+        "My direct efforts ensured stability and user experience on a critical platform for the bank's success."
       ]
     },
     {
       "company": "Evalueserve",
       "date": "2022",
       "content": [
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        "Sole developer on a dynamic project, starting from scratch",
+        "Proficient in D3.js and React Chart 2 for charting tools",
+        "Specialized in React development and Material UI",
+        "Provided support for TypeScript integration",
+        "Exposure to Vue.js and CI/CD using GitHub Actions and Azure devops, Docker container creation and management",
+        "Managed a content writer and optimized workflows with kontent.ai",
+        "Reduced time development for charts by creating templates of the most requested ones"
       ]
     }
   ]

@@ -72,10 +72,6 @@ const GlobalStyle = createGlobalStyle`
     padding-bottom: 6rem;
   }
 
-  h2{
-    margin-bottom: 4rem;
-  }
-  
   p{
     margin: 1rem;
   }
