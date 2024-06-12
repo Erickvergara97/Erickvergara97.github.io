@@ -1,21 +1,36 @@
 import React from "react";
 import styled from 'styled-components'
+import profilePic from '../assets/img/profilePic.jpeg'
 
 function Profile() {
     return (
         <AboutMe id="about">
-            <div className="aboutContainer">
-                <h2>My name is Erick Vergara</h2>
-                <p>I am a Frontend developer with knowledge in many languages such as React and JavaScript. I have experience working with Javascript, React, CSS, SASS, and many others Frontend tools. One of the main things that characterizes me is my fast learning and being a good teammate, my journey started one year ago since I moved to another city and met a friend who is a Senior Frontend developer, so he started teaching me and then I kept studying by my own, I really love to code so I think that this helped me to learn this in a short time period, I love making webpages that helps other people to have a good experience in there. I am always seeking to keep improving my skills looking for new tools. It hasn't been an easy journey but what makes me continue trusting the process and myself is the next quote:
-                </p>
+            <div className="cardContainer">
+                <div className="aboutContainer">
+                    <h2>The Story Behind My Career</h2>
+                    <p>
+                    One day, as my professional internship was coming to an end, I was handed an exciting task: 
+                    editing the company's SharePoint. Given my passion for coding and algorithms, I eagerly accepted 
+                    the challenge. That moment marked a turning point. After completing my internship, I relocated to a 
+                    new city, ready to start a new chapter of my life. It was there that I met a senior developer who became 
+                    my mentor, teaching me the fundamentals that have shaped my career.
+                    </p>
 
-                <span>"Fake it till you make it"</span>
+                    <p>
+                    Hello! My name is Erick Vergara, and I am a frontend developer specializing in React. I hope this 
+                    brief introduction gives you a glimpse into the person behind this resume.
+                    </p>
 
-                <a href="https://docs.google.com/presentation/d/1Ic23Vg8gmHru4E4j8yrahbeolfO8LFDK/edit#slide=id.p1" target="_blank" rel="noreferrer">
-                    <button className="button primaryBtn">
-                        Download CV
-                    </button>
-                </a>
+                    {/* <span>"Fake it till you make it"</span> */}
+
+                    <a href="https://docs.google.com/presentation/d/1Ic23Vg8gmHru4E4j8yrahbeolfO8LFDK/edit#slide=id.p1" target="_blank" rel="noreferrer">
+                        <button className="button primaryBtn">
+                            Download CV
+                        </button>
+                    </a>
+                </div>
+                
+                <img src={profilePic} alt="profile" className="profilePic"/>
             </div>
         </AboutMe>
     )
@@ -31,18 +46,39 @@ const AboutMe = styled.section `
     flex-direction: column;
     align-items: center;
 
-    .aboutContainer{
-        line-height: 2.5;
+    .cardContainer{
+        background-color: ${({ theme }) => theme.cards};
+        border-radius: 10px;
         margin: 2rem;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+
+    }
+
+    .aboutContainer{
+        padding: 10px;
+        line-height: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 60%;
+        height: fit-content;
         h2{
+            margin-bottom: 2rem;
             @media(min-width: 768px){
                 font-size: 32px;
             }
         }
+    }
+
+    .imageContainer{
+        width: 40%;
+    }
+
+    .profilePic{
+        height: 100%;
+        border-radius: 0px 10px 10px 0px;
     }
 
     @media(min-width: 768px){
