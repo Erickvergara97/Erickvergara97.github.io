@@ -1,11 +1,12 @@
 import React from "react";
 import styled from 'styled-components'
 import profilePic from '../assets/img/profilePic.jpeg'
+import GlowingCard from "../commons/GlowingCard";
 
 function Profile() {
     return (
         <AboutMe id="about">
-            <div className="cardContainer">
+            <GlowingCard style={{margin: '2rem', width: '80%', display: 'flex', flexDirection: 'row', height: '500px'}}>
                 <div className="aboutContainer">
                     <h2>The Story Behind My Career</h2>
                     <p>
@@ -31,7 +32,7 @@ function Profile() {
                 </div>
                 
                 <img src={profilePic} alt="profile" className="profilePic"/>
-            </div>
+            </GlowingCard>
         </AboutMe>
     )
 }
@@ -45,17 +46,6 @@ const AboutMe = styled.section `
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .cardContainer{
-        background-color: ${({ theme }) => theme.cards};
-        border-radius: 10px;
-        margin: 2rem;
-        width: 80%;
-        display: flex;
-        flex-direction: row;
-        height: 500px;
-
-    }
 
     .aboutContainer{
         padding: 10px;

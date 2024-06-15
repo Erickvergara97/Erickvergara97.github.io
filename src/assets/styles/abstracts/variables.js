@@ -5,7 +5,7 @@ export let colorBlack = '#010101';
 export let lightTheme = {
     primary: '#000',
     secondary: 'purple',
-    background: 'radial-gradient(125% 125% at 50% 10%,#fff 40%,#63e 100%)',
+    background: 'radial-gradient(#444cf7 0.5px, #ffffff 0.5px);',
     textPrimary: '#000',
     textSecondary: 'red',
     accent: '#8263CE',
@@ -20,7 +20,7 @@ export let lightTheme = {
 export let darkTheme = {
     primary: '#fff',
     secondary: 'pink',
-    background: 'radial-gradient(125% 125% at 50% 10%,#000 40%,#63e 100%)',
+    background: 'radial-gradient(#444cf7 0.5px, #000000 0.5px);',
     textPrimary: '#fff',
     textSecondary: 'purple',
     accent: '#8263CE',
@@ -30,6 +30,6 @@ export let darkTheme = {
     divider: '#0000',
     navbar: '#1b1b1f',
     cards: '#1b1b1f',
+    cardTest: '#151823',
     icons: '#C2C6DA'
-
 }
