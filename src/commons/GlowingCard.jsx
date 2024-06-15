@@ -50,5 +50,5 @@ const GlowingCardContainer = styled.div`
   /* color: #332537; */
   background-color: ${({ theme }) => theme.cards};
   /* animation: ${textColor} 1s ease infinite; */
-  ${({ theme }) => backlight('2vw', '2vw', '5vw', '0.95', theme.primary, theme.secondary, '5s')}
+  ${({ theme }) => backlight('2vw', '2vw', '5vw', '0.95', theme.cardGradient1, theme.cardGradient2, '5s')}
 `;

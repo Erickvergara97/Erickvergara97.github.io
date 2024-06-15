@@ -1,32 +1,29 @@
 import React from "react";
 import styled from 'styled-components'
 import {SiLinkedin, SiGmail, SiGithub } from "react-icons/si"
+import GlowingIconButton from "../commons/GlowingIconButton";
 
 
-function Contact() {
+function Contact({ isDarkMode }) {
     return (
-        <ContactContainer id="contact">
+        <ContactContainer id="contact" isDarkMode={isDarkMode}>
             <div className="box">
-                <div className="miniBox">
+                <GlowingIconButton iconColor='red'>
                     <a href="mailto:erick.vergara.ruiz@gmail.com" target="_blank" rel="noreferrer">
                         <SiGmail className="icon gmail"/>
                     </a>
-                    <p>Gmail</p>
-                </div>
-                <div className="miniBox">
+                </GlowingIconButton>
+                <GlowingIconButton iconColor='#006192'>
                     <a href="https://www.linkedin.com/in/erick-vergara-a782691a5/" target="_blank" rel="noreferrer">
                         <SiLinkedin className="icon linkedin"/>
                     </a>
-                    <p>Linkedn</p>
-                </div>
-                <div className="miniBox">
-                <a href="https://github.com/Erickvergara97" target="_blank" rel="noreferrer">
-                    <SiGithub className="icon github"/>
-                </a>
-                    <p>Github</p>
-                </div>
+                </GlowingIconButton>
+                <GlowingIconButton iconColor='#6cc644'>
+                    <a href="https://github.com/Erickvergara97" target="_blank" rel="noreferrer">
+                        <SiGithub className="icon github"/>
+                    </a>
+                </GlowingIconButton>
             </div>
-
         </ContactContainer>
     )
 }
@@ -38,45 +35,20 @@ const ContactContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    h2{
-        color: ${({theme}) => theme.accent};
-    }
-
     .box{
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: center;
 
-        @media(min-width: 768px){
-            width: 60%;
+        .icon{
+            width: 2rem;
+            height: auto;
         }
-        .miniBox{
-            margin: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            p{
-                color: ${({ theme }) => theme.accent };
-                font-weight: bold;
-            }
 
-            .icon{
-                width: 4rem;
-                height: auto;
-            }
-
-            .gmail{ color: red}
-            .linkedin{ color: #006192}
-            .github{ color: #211F1F}
-
-            .gmail, .linkedin, .github {
-                transition: color 2s, background-color 2s;
-                &:hover{
-                    color: ${({ theme }) => theme.accent };
-                    background-color: transparent;
-                }
-            }
+        .gmail{             
+            color: ${({ isDarkMode }) => isDarkMode ? 'white' : 'red'}
         }
+        .linkedin{ color: ${({ isDarkMode }) => isDarkMode ? 'white' : '#006192'}}
+        .github{ color: ${({ isDarkMode }) => isDarkMode ? 'white' : '#211F1F'}}
     }
 `

@@ -15,7 +15,9 @@ export let lightTheme = {
     divider: '#e2e2e3',
     navbar: '#F6F6F7',
     cards: '#F6F6F7',
-    icons: 'auto'
+    icons: 'auto',
+    cardGradient1: '#4A90E2',
+    cardGradient2: '#8263CE'
 };
 export let darkTheme = {
     primary: '#fff',
@@ -31,5 +33,7 @@ export let darkTheme = {
     navbar: '#1b1b1f',
     cards: '#1b1b1f',
     cardTest: '#151823',
-    icons: '#C2C6DA'
+    icons: '#C2C6DA',
+    cardGradient1: '#0fffc1',
+    cardGradient2: '#7e0fff'
 }

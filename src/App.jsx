@@ -37,7 +37,7 @@ function App() {
             <Projects />
             <Skills />
             <Profile />
-            <Contact />
+            <Contact isDarkMode={isDarkMode} />
           </main>
           <Footer/>
       </BrowserRouter>
