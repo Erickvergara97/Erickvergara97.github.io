@@ -11,7 +11,7 @@ function Skills() {
         <SkillsContainer id="skills" offset={offset}>
             <div className="box" >
                 <h3>Stack</h3>
-                <div className="carrousel gap-10 pb-10">
+                <div className="carrousel gap-5 pb-10">
                     {/* <div className=" flex items-center justify-center h-screen"> */}
                     {stackItem.map((item, index) => (
                     <div key={index} className="iconContainer">
@@ -59,7 +59,7 @@ const SkillsContainer = styled.section`
             .iconContainer{
                 display: flex;
                 justify-content: center;
-                flex-basis: 220px;
+                flex-basis: 170px;
             }
         }
     }
