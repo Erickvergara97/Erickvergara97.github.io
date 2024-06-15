@@ -37,7 +37,7 @@ function App() {
             <Projects />
             <Skills />
             <Profile />
-            <Contact />
+            <Contact isDarkMode={isDarkMode} />
           </main>
           <Footer/>
       </BrowserRouter>
@@ -59,8 +59,12 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
   background: ${({ theme }) => theme.background };
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-color: #e5e5f7; */
+  opacity: 1;
+  /* background-image:  radial-gradient(#444cf7 0.5px, #000000 0.5px); */
+  background-size: 10px 10px;
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
   //Escoger tipografia
   font-family: "Archivo Black", sans-serif;
   font-family: "Quicksand", sans-serif;
@@ -71,7 +75,7 @@ const GlobalStyle = createGlobalStyle`
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-
+  
   p{
     margin: 1rem;
   }
