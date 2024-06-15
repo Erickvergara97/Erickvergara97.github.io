@@ -42,7 +42,6 @@ export default Profile
 
 const AboutMe = styled.section `
     color: ${({ theme }) => theme.primary };
-    padding-bottom: 14rem;
     display: flex;
     flex-direction: column;
     align-items: center;
