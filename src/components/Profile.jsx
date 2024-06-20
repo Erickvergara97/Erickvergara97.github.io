@@ -6,9 +6,9 @@ import GlowingCard from "../commons/GlowingCard";
 function Profile() {
     return (
         <AboutMe id="about">
-            <GlowingCard style={{margin: '2rem', width: '80%', display: 'flex', flexDirection: 'row', height: '500px'}}>
+            <GlowingCard className='glowingCard'>
                 <div className="aboutContainer">
-                    <h2>The Story Behind My Career</h2>
+                    <h3>The Story Behind My Career</h3>
                     <p>
                     One day, as my professional internship was coming to an end, I was handed an exciting task: 
                     editing the company's SharePoint. Given my passion for coding and algorithms, I eagerly accepted 
@@ -45,32 +45,46 @@ const AboutMe = styled.section `
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .aboutContainer{
-        padding: 10px;
-        line-height: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: fit-content;
-        h2{
-            margin-bottom: 2rem;
-            @media(min-width: 768px){
-                font-size: 32px;
-            }
+    .glowingCard{
+        margin: 2rem;
+        width: 80%;
+        display: flex; 
+        flex-direction: column-reverse;
+        
+        .aboutContainer{
+            padding: 10px;
+            line-height: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: fit-content;
+            /* h2{
+                margin-bottom: 2rem;
+                @media(min-width: 768px){
+                    font-size: 32px;
+                }
+            } */
+        }
+    
+        .profilePic{
+            border-radius: 10px 10px 0px 0px;
+            width: 100%;
+            max-height: 40rem;
         }
     }
 
-    .imageContainer{
-        width: 40%;
-    }
-
-    .profilePic{
-        height: 100%;
-        border-radius: 0px 10px 10px 0px;
-    }
 
     @media(min-width: 768px){
-        align-items: center;
+        /* align-items: center; */
+        .glowingCard{
+            flex-direction: row;
+            
+            .profilePic{
+                border-radius: 0px 10px 10px 0px;
+                width: 40%;
+                max-height: fit-content;
+            }
+        }
+
     }
 `
