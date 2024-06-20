@@ -82,36 +82,12 @@ const GlobalStyle = createGlobalStyle`
 
   .button{
     width: 9rem;
-    line-height: 3rem;
-    align-self: center;
     margin: 1rem;
-    border: 3px solid;
-    border-radius: 10px;
     font-weight: bold;
-    transition: background-color 1s, color 1s;    
   }
   .primaryBtn{
-    color: ${({ theme }) => theme.accent };
-    background-color: ${colorWhite};
+    color: white;
+    background-color: #7e0fff;
     border-color: ${colorWhite};
-
-    &&:hover{
-      background-color: transparent;
-      color: ${colorWhite};
-      a{
-        color: ${colorWhite};
-      }
-    }
   }
-
-  .secondaryBtn{
-      background-color: ${({ theme }) => theme.accent };
-      color: ${colorWhite};
-      border-color: ${({ theme }) => theme.accent };
-    &&:hover{
-      background-color: ${colorWhite};
-      color: ${({ theme }) => theme.accent };
-    }
-  }
-  
 `

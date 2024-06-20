@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components'
 import profilePic from '../assets/img/profilePic.jpeg'
 import GlowingCard from "../commons/GlowingCard";
+import GlowingIconButton from "../commons/GlowingIconButton";
 
 function Profile() {
     return (
@@ -25,9 +26,9 @@ function Profile() {
                     {/* <span>"Fake it till you make it"</span> */}
 
                     <a href="https://docs.google.com/presentation/d/1Ic23Vg8gmHru4E4j8yrahbeolfO8LFDK/edit#slide=id.p1" target="_blank" rel="noreferrer">
-                        <button className="button primaryBtn">
+                        <GlowingIconButton iconColor={'#0fffc1'} className="button primaryBtn">
                             Download CV
-                        </button>
+                        </GlowingIconButton>
                     </a>
                 </div>
                 
@@ -78,7 +79,7 @@ const AboutMe = styled.section `
         /* align-items: center; */
         .glowingCard{
             flex-direction: row;
-            
+
             .profilePic{
                 border-radius: 0px 10px 10px 0px;
                 width: 40%;
