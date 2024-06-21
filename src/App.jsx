@@ -12,6 +12,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Pdf from "./components/routes/Pdf";
 import { useEffect, useState } from "react";
 import Experience from "./components/Experience";
+import { Element } from "react-scroll";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -32,12 +33,25 @@ function App() {
           <GlobalStyle/>
           <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
           <main>
-            <Home />
-            <Experience isDarkMode={isDarkMode} />
-            <Projects />
-            <Skills />
-            <Profile />
-            <Contact isDarkMode={isDarkMode} />
+            <Element name="home">
+              <Home />
+            </Element>
+            <Element name="experience">
+              <Experience isDarkMode={isDarkMode} />
+            </Element>
+            <Element name="projects">
+              <Projects />
+            </Element>
+            <Element name="stack">
+              <Skills />
+            </Element>
+            <Element name="about-me">
+              <Profile />
+            </Element>
+            <Element name="contact">
+              <Contact isDarkMode={isDarkMode} />
+            </Element>
+            
           </main>
           <Footer/>
       </BrowserRouter>

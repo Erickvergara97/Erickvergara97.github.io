@@ -6,6 +6,7 @@ import logo from "../assets/img/ev-logo.png"
 import LanguageDropdown from "./navbar/languageDropdown";
 import NavbarButton from "./navbar/navbarButton";
 import SwitchButton from "./navbar/switchButton";
+import { Link } from "react-scroll";
 
 function Navbar({ isDarkMode, setIsDarkMode }) {
     const [clicked, setClicked] = useState(false);
@@ -41,11 +42,24 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
         <NavContainer scrollPosition={scrollPosition}>
             <img src={logo} alt="logo" className="logo"/>
             <nav className={`links ${clicked ? 'active' : ''}`}>
-                <NavbarButton link="#home">Home</NavbarButton>
-                <NavbarButton link="#about">About me</NavbarButton>
-                <NavbarButton link="#skills">Skills</NavbarButton>
-                <NavbarButton link="#projects">Projects</NavbarButton>
-                <NavbarButton link="#contact">Contact</NavbarButton>
+                <Link to="home" spy={true} smooth={true}  duration={500}>
+                    <NavbarButton>Home</NavbarButton>
+                </Link>
+                <Link to="experience" spy={true} smooth={true}  duration={500}>
+                    <NavbarButton>Experience</NavbarButton>
+                </Link>
+                <Link to="projects" spy={true} smooth={true}  duration={500}>
+                    <NavbarButton>Projects</NavbarButton>
+                </Link>
+                <Link to="stack" spy={true} smooth={true}  duration={500}>
+                    <NavbarButton>Stack</NavbarButton>
+                </Link>
+                <Link to="about-me" spy={true} smooth={true}  duration={500}>
+                    <NavbarButton>About me</NavbarButton>
+                </Link>
+                <Link to="contact" spy={true} smooth={true}  duration={500}>
+                    <NavbarButton>Contact</NavbarButton>
+                </Link>
             </nav>
             <div style={{display: 'flex', gap: 15, alignItems: 'center'}}>
                 <LanguageDropdown/>

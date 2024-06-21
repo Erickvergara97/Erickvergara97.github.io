@@ -9,7 +9,7 @@ function Profile() {
         <AboutMe id="about">
             <GlowingCard className='glowingCard'>
                 <div className="aboutContainer">
-                    <h3>The Story Behind My Career</h3>
+                    <h4>The Story Behind My Career</h4>
                     <p>
                     One day, as my professional internship was coming to an end, I was handed an exciting task: 
                     editing the company's SharePoint. Given my passion for coding and algorithms, I eagerly accepted 

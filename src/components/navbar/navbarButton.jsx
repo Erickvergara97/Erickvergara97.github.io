@@ -7,7 +7,7 @@ export default function NavbarButton({link,children}) {
   )
 }
 
-const NavButton = styled.a`
+const NavButton = styled.div`
   color: ${({ theme }) => theme.primary};
   text-decoration: none;
   margin-right: 1rem;
