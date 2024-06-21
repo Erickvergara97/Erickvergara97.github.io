@@ -17,7 +17,7 @@ function Home() {
                     'Web developer.',
                     1000,
                 ]}
-                speed={50}
+                speed={10}
                 style={{ fontSize: '5rem' }}
                 wrapper="p"
                 />
