@@ -62,7 +62,7 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
                 </Link>
             </nav>
             <div style={{display: 'flex', gap: 15, alignItems: 'center'}}>
-                <LanguageDropdown/>
+                {/* <LanguageDropdown/> */}
                 <SwitchButton isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
             </div>
             <div className="burger">
