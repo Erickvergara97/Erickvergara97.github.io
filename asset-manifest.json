@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.1bae358b.js",
+    "main.css": "/static/css/main.151978ab.css",
+    "main.js": "/static/js/main.95034331.js",
     "static/media/vivelacumbre.png": "/static/media/vivelacumbre.353298ad1f3575b138ed.png",
     "static/media/animewiki.png": "/static/media/animewiki.ab00a9ff1b6a6156139b.png",
+    "static/media/profilePic.jpeg": "/static/media/profilePic.edc1a24161f57a3bdaf6.jpeg",
     "static/media/resume-ev.pdf": "/static/media/resume-ev.44bb2d69f1d66aa14935.pdf",
     "static/media/techevent.png": "/static/media/techevent.03ae2d2a887c55b0c5e1.png",
-    "static/media/profile-picture.jpeg": "/static/media/profile-picture.3bd839166e7fe305e4e8.jpeg",
     "static/media/ev-logo.png": "/static/media/ev-logo.6c1354bfc8e640e0fea0.png",
+    "static/media/globant-logo.svg": "/static/media/globant-logo.c371415f03e9249d4c91e8aa305dd33c.svg",
+    "static/media/Evalueserve-logo.svg": "/static/media/Evalueserve-logo.fade80dee2481a9e87c4dd17979bfad3.svg",
     "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.1bae358b.js.map": "/static/js/main.1bae358b.js.map"
+    "main.151978ab.css.map": "/static/css/main.151978ab.css.map",
+    "main.95034331.js.map": "/static/js/main.95034331.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.1bae358b.js"
+    "static/css/main.151978ab.css",
+    "static/js/main.95034331.js"
   ]
 }
