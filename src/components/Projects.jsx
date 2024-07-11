@@ -6,6 +6,7 @@ import {SiJavascript, SiGithub, SiCss3} from "react-icons/si";
 import vivelacumbre from "../assets/img/vivelacumbre.png"
 import animewiki from "../assets/img/animewiki.png"
 import techEvent from "../assets/img/techevent.png"
+import movieWeb from "../assets/img/movie-web-profile.png"
 
 
 function Projects() {
@@ -29,7 +30,7 @@ function Projects() {
                     <div className="con-text">
                         <h4>Vive la cumbre</h4>
                         <p>
-                            This was my first webpage with an "oficial" domain, it was made for a foundation named Vivelacumbre and I worked collaboratively with another web developer and some members of the foundation in order to discuss the design and interactions of the page. 
+                            Vivelacumbre ONG website was developed working collaboratively with another web developer and foundation members to design and implement user interactions. The project involved discussing design elements and ensuring a seamless user experience.
                             <a href="https://vivelacumbre.org/" target="_blank" rel="noreferrer">
                                 See webpage
                             </a>
@@ -54,6 +55,29 @@ function Projects() {
                         <p>
                             Animewiki is a webpage made with react in where the main goal was to use an API and some others react tools like Route or Hooks.
                             <a href="https://erickvergara97.github.io/proyecto-anime/" target="_blank" rel="noreferrer">
+                                See webpage
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div className="miniBox">
+                    <ul className="ul">
+                        <li>
+                            <DiReact/>
+                        </li>
+                        <a href="https://github.com/Erickvergara97/movie-web" target="_blank" rel="noreferrer">
+                            <li>
+                                <SiGithub/>
+                            </li>
+                        </a>
+                    </ul>
+                    <img src={movieWeb} alt="movieWeb" />
+                    <div className="con-text">
+                        <h4>Movie Web</h4>
+                        <p>
+                        A dynamic React application that uses an API to display detailed movie information. Features advanced hooks like useQuery, useLocation, useParams, and basic hooks like useState and useEffect for state management and navigation.
+                            <a href="https://erickvergara97.github.io/movie-web/" target="_blank" rel="noreferrer">
                                 See webpage
                             </a>
                         </p>
