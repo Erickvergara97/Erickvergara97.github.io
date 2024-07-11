@@ -30,7 +30,7 @@ function Projects() {
                     <div className="con-text">
                         <h4>Vive la cumbre</h4>
                         <p>
-                            Vivelacumbre ONG website was developed working collaboratively with another web developer and foundation members to design and implement user interactions. The project involved discussing design elements and ensuring a seamless user experience.
+                            Vivelacumbre ONG website was developed working collaborating with a web developer and foundation members to design and implement user interactions, ensuring a seamless experience.
                             <a href="https://vivelacumbre.org/" target="_blank" rel="noreferrer">
                                 See webpage
                             </a>
