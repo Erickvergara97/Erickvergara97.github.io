@@ -141,8 +141,8 @@ const NavContainer = styled.header`
 
 const BurgerBg = styled.div `
     position: fixed;
-    background-color: ${colorBlack};
-    opacity: 0.7;
+    background-color: ${({ theme }) => theme.navbar };
+    opacity: 0.9;
     top: -1000px;
     left: -1000px;
     width: 100%;
