@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.151978ab.css",
-    "main.js": "/static/js/main.0c3b3287.js",
+    "main.js": "/static/js/main.f4d5d9cb.js",
     "static/media/vivelacumbre.png": "/static/media/vivelacumbre.353298ad1f3575b138ed.png",
     "static/media/animewiki.png": "/static/media/animewiki.ab00a9ff1b6a6156139b.png",
     "static/media/profilePic.jpeg": "/static/media/profilePic.edc1a24161f57a3bdaf6.jpeg",
@@ -12,10 +12,10 @@
     "static/media/Evalueserve-logo.svg": "/static/media/Evalueserve-logo.fade80dee2481a9e87c4dd17979bfad3.svg",
     "index.html": "/index.html",
     "main.151978ab.css.map": "/static/css/main.151978ab.css.map",
-    "main.0c3b3287.js.map": "/static/js/main.0c3b3287.js.map"
+    "main.f4d5d9cb.js.map": "/static/js/main.f4d5d9cb.js.map"
   },
   "entrypoints": [
     "static/css/main.151978ab.css",
-    "static/js/main.0c3b3287.js"
+    "static/js/main.f4d5d9cb.js"
   ]
 }
