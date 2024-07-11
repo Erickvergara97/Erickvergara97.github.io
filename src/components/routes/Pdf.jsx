@@ -4,7 +4,7 @@ import styled from "styled-components"
 function Pdf() {
   return (
     <PdfContainer>
-        <object data={require("../../assets/docs/resume-ev.pdf")} type="application/pdf"> 
+        <object data={require("../../assets/docs/erick-vergara-resume.pdf")} type="application/pdf"> 
         </object>
     </PdfContainer>
   )
