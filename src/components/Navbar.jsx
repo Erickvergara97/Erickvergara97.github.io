@@ -24,6 +24,10 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
     const handleScroll = () => {
         setScrollPosition(window.scrollY);
       };
+
+    const closeMenu = () => {
+        setClicked(false);
+    };
     
       document.onclick = function (clickEvent) {
           if(clickEvent.target.tagName === 'A'){
@@ -42,22 +46,22 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
         <NavContainer scrollPosition={scrollPosition}>
             <img src={logo} alt="logo" className="logo"/>
             <nav className={`links ${clicked ? 'active' : ''}`}>
-                <Link to="home" spy={true} smooth={true}  duration={500}>
+                <Link to="home" spy={true} smooth={true}  duration={1000} onClick={closeMenu}>
                     <NavbarButton>Home</NavbarButton>
                 </Link>
-                <Link to="experience" spy={true} smooth={true}  duration={500}>
+                <Link to="experience" spy={true} smooth={true}  duration={1000} onClick={closeMenu}>
                     <NavbarButton>Experience</NavbarButton>
                 </Link>
-                <Link to="projects" spy={true} smooth={true}  duration={500}>
+                <Link to="projects" spy={true} smooth={true}  duration={1000} onClick={closeMenu}>
                     <NavbarButton>Projects</NavbarButton>
                 </Link>
-                <Link to="stack" spy={true} smooth={true}  duration={500}>
+                <Link to="stack" spy={true} smooth={true}  duration={1000} onClick={closeMenu}>
                     <NavbarButton>Stack</NavbarButton>
                 </Link>
-                <Link to="about-me" spy={true} smooth={true}  duration={500}>
+                <Link to="about-me" spy={true} smooth={true}  duration={1000} onClick={closeMenu}>
                     <NavbarButton>About me</NavbarButton>
                 </Link>
-                <Link to="contact" spy={true} smooth={true}  duration={500}>
+                <Link to="contact" spy={true} smooth={true}  duration={1000} onClick={closeMenu}>
                     <NavbarButton>Contact</NavbarButton>
                 </Link>
             </nav>
