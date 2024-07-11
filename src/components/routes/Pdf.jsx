@@ -4,7 +4,7 @@ import styled from "styled-components"
 function Pdf() {
   return (
     <PdfContainer>
-        <object data={require("https://drive.google.com/file/d/1Z5ETAEyQaZD-xC7us6ObaQY30utW8yLH/view")} type="application/pdf"> 
+        <object data={require("../../assets/docs/erick-vergara-resume.pdf")} type="application/pdf"> 
         </object>
     </PdfContainer>
   )
