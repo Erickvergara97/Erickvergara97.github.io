@@ -25,7 +25,7 @@ function Profile() {
 
                     {/* <span>"Fake it till you make it"</span> */}
 
-                    <a href="/pdf" target="_blank" rel="noreferrer">
+                    <a href="https://drive.google.com/file/d/1Z5ETAEyQaZD-xC7us6ObaQY30utW8yLH/view" target="_blank" rel="noreferrer">
                         <GlowingIconButton iconColor={'#0fffc1'} className="button primaryBtn">
                             Download CV
                         </GlowingIconButton>
